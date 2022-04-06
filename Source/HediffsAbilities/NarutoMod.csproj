@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SovereignNarutoMod\Assemblies\NarutoMod.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFE49966-391E-4953-8CFE-2BB3435A099B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>NarutoMod</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>NarutoMod</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NM_BlackSpark.cs" />
+    <Compile Include="NM_BlackFire.cs" />
+    <Compile Include="NM_BlackFireUtility.cs" />
+    <Compile Include="DefOfs\NM_FleckDefOf.cs" />
+    <Compile Include="DefOfs\NM_HediffDefOf.cs" />
+    <Compile Include="DefOfs\NM_ThingDefOf.cs" />
+    <Compile Include="Verbs\NM_VerbProperties_Ability.cs" />
+    <Compile Include="Verbs\NM_Verb_AbilityHediff.cs" />
+    <Compile Include="Verbs\NM_Verb_AddHediffTarget.cs" />
+    <Compile Include="Verbs\NM_Verb_AddHediffSelf.cs" />
+    <Compile Include="Verbs\NM_Verb_MapTeleport.cs" />
+    <Compile Include="Verbs\NM_Verb_WoodRelease_Wall.cs" />
+    <Compile Include="Verbs\NM_Verb_TeleportTargetAway.cs" />
+    <Compile Include="Verbs\NM_Verb_TeleportToCaster.cs" />
+    <Compile Include="Verbs\NM_Verb_ThrowMeteor.cs" />
+    <Compile Include="Verbs\NM_Verb_Teleport.cs" />
+    <Compile Include="Verbs\NM_Verb_Amaterasu.cs" />
+    <Compile Include="Things\NM_Comp_RaceComp.cs" />
+    <Compile Include="Things\NM_CompProperties_RaceComp.cs" />
+    <Compile Include="Patches\NM_Start.cs" />
+    <Compile Include="Patches\NM_HumanlikeRacesPatch.cs" />
+    <Compile Include="Hediffs\NM_HediffCompProperties_AddSkills.cs" />
+    <Compile Include="Hediffs\NM_HediffComp_AddSkills.cs" />
+    <Compile Include="Hediffs\NM_HediffComp_Ability.cs" />
+    <Compile Include="Hediffs\NM_HediffCompProperties_Ability.cs" />
+    <Compile Include="GUI\NM_Window_MapTeleport.cs" />
+    <Compile Include="Gizmos\NM_Command_HediffAbility.cs" />
+    <Compile Include="Gizmos\NM_Gizmo_Power.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

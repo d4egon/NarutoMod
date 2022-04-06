@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RockBase">
+		<defName>ThingDef_RaisedWood</defName>
+		<label>raised woods</label>
+		<description>It will collapse in time.</description>
+		<graphicData>
+			<color>(108,57,21)</color>
+		</graphicData>
+		<tickerType>Rare</tickerType>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<filthLeaving>Filth_RubbleRock</filthLeaving>
+		<building>
+			<isNaturalRock>false</isNaturalRock>
+			<claimable>false</claimable>
+			<destroySound>ChunkRock_Drop</destroySound>
+		</building>
+		<comps>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>10000</lifespanTicks>
+				<expireEffect>RaisedRock_Collapse</expireEffect>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

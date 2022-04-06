@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Prostheses_HediffDef_EyeIII</defName>
+		<label>Byakugan</label>
+		<description>A powerful eye with visual powers which is created by harnessing the power of a Divine fruit.The metal casing is for protection of the Users eye.It can see about everything in a 360 degree around it and can see through objects for miles.</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_EyeIII</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.6</partEfficiency>
+		</addedPartProps>
+		<stages> 
+			<li>
+				<statOffsets>
+					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.15</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+		<woundAnchorRange>0</woundAnchorRange>
+		<displayWound>true</displayWound>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_AddHediffSelf</verbClass>
+						<label>Byakugan</label>
+						<description>Improves accuracy and aiming time with the power of the Byakugan implant</description>
+						<commandIcon>GUI/EagleEye</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_WhiteProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+						<severity>1</severity>
+						<hediffDef>HediffDef_EagleEye</hediffDef>
+					</li>
+				</verbProps>
+			</li>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_AddSkills">
+				<skillDef>Shooting</skillDef>
+				<levels>3</levels>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_EyeIII</defName>
+		<label>Byakugan</label>
+		<description>A powerful eye with visual powers which is created by harnessing the power of a Divine fruit.The metal casing is for protection of the Users eye.It can see about everything in a 360 degree around it and can see through objects for miles.</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_Blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>Prostheses_RecipeInstall_EyeIII</defName>
+		<label>Install Byakugan</label>
+		<description>Install Byakugan</description>
+		<jobString>Installing Byakugan</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeIII</li>
+					</thingDefs> 
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeIII</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Prostheses_HediffDef_EyeIII</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Prostheses_HediffDef_EyeIV</defName>
+		<label>Mangekyou Sharingan</label>
+		<description>A powerful eye with visual powers which is created by harnessing the power of a Divine fruit.The metal casing is for protection of the Users eye.It's the advanced version of the sharingan.It can also teleport the user and set people on fire....just by looking at them.A Mangekyō Sharingan is distinguished from a normal Sharingan by its appearance, which changes the form of the tomoe seal. While the exact design differs for each user, they all resemble pinwheels.</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_EyeIV</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.4</partEfficiency>
+		</addedPartProps>
+		<stages> 
+			<li>
+				<statOffsets>
+					<MeleeHitChance>6</MeleeHitChance>
+					<MeleeDodgeChance>6</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+		<woundAnchorRange>0</woundAnchorRange>
+		<displayWound>true</displayWound>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_Amaterasu</verbClass>
+						<label>Amaterasu</label>
+						<description>Amaterasu is a Mangekyo Sharingan power, and the highest level of Fire. Said to represent the Material World and Light</description>
+						<commandIcon>GUI/Amaterasu</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+						<damageAmount>15</damageAmount>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_Teleport</verbClass>
+						<label>Kamui teleport</label>
+						<description>The Caster uses this on himfself,sucking himself into his eye to enter Kamui's dimension and then exiting back to whatever close location the user desires.</description>
+						<commandIcon>GUI/Teleport</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_AddHediffSelf</verbClass>
+						<label>Sharingan</label>
+						<description>This puts the user into Sharingan mode,where they can prevent just about any attack for a certain period of time.</description>
+						<commandIcon>GUI/Sharingan</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<!-- self add hediff MUST have 0 warmupTime -->
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+						<severity>1</severity>
+						<hediffDef>HediffDef_Invulnerable</hediffDef>
+					</li>
+				</verbProps>
+			</li>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_AddSkills">
+				<skillDef>Melee</skillDef>
+				<levels>6</levels>
+			</li>
+		</comps>
+	</HediffDef>
+
+
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_EyeIV</defName>
+		<label>Mangekyou Sharingan</label>
+		<description>A powerful eye with visual powers which is created by harnessing the power of a Divine fruit.The metal casing is for protection of the Users eye.It's the advanced version of the sharingan.It can also teleport the user and set people on fire....just by looking at them.A Mangekyō Sharingan is distinguished from a normal Sharingan by its appearance, which changes the form of the tomoe seal. While the exact design differs for each user, they all resemble pinwheels.</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_Red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>Prostheses_RecipeInstall_EyeIV</defName>
+		<label>Install Mangekyou Sharingan</label>
+		<description>Install Mangekyou Sharingan.</description>
+		<jobString>Installing Mangekyou Sharingan.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeIV</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeIV</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Prostheses_HediffDef_EyeIV</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Prostheses_HediffDef_EyeV</defName>
+		<label>Sharingan</label>
+		<description>A powerful eye with visual powers which is created by harnessing the power of a Divine fruit.The metal casing is for protection of the Users eye.It can predict enemy movement and turn the user invincible for a couple of seconds.</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_EyeV</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.25</partEfficiency>
+		</addedPartProps>
+		<stages> 
+			<li>
+				<statOffsets>
+					<MeleeHitChance>3</MeleeHitChance>
+					<MeleeDodgeChance>3</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+		<woundAnchorRange>0</woundAnchorRange>
+		<displayWound>true</displayWound>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_AddHediffSelf</verbClass>
+						<label>Sharingan</label>
+						<description>This puts the User into Sharingan mode,where they can prevent just about any attack for a certain period of time</description>
+						<commandIcon>GUI/Sharingan</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<!-- self add hediff MUST have 0 warmupTime -->
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+						<severity>1</severity>
+						<hediffDef>HediffDef_Invulnerable</hediffDef>
+					</li>
+				</verbProps>
+			</li>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_AddSkills">
+				<skillDef>Melee</skillDef>
+				<levels>3</levels>
+			</li>
+		</comps>
+	</HediffDef>
+
+
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_EyeV</defName>
+		<label>Sharingan</label>
+		<description>A powerful eye with visual powers which is created by harnessing the power of a Divine fruit.The metal casing is for protection of the Users eye.It can predict enemy movement and turn the user invincible for a couple of seconds.</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_Red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>Prostheses_RecipeInstall_EyeV</defName>
+		<label>Install Sharingan</label>
+		<description>Install Sharingan</description>
+		<jobString>Installing Sharingan</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeV</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeV</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Prostheses_HediffDef_EyeV</addsHediff>
+	</RecipeDef>
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Prostheses_HediffDef_EyeVI</defName>
+		<label>Rinne-Sharingan</label>
+		<description>A combination of two powerful eyes with visual powers.While not so strong,it combines the abilities of both eyes into one</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_EyeVI</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.30</partEfficiency>
+		</addedPartProps>
+		<stages> 
+			<li>
+				<statOffsets>
+					<MeleeHitChance>3</MeleeHitChance>
+					<MeleeDodgeChance>3</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+		<woundAnchorRange>0</woundAnchorRange>
+		<displayWound>true</displayWound>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_AddHediffSelf</verbClass>
+						<label>Sharingan</label>
+						<description>This puts the User into Sharingan mode,where they can prevent just about any attack for a certain period of time</description>
+						<commandIcon>GUI/Sharingan</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<!-- self add hediff MUST have 0 warmupTime -->
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_PrupleProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+						<severity>1</severity>
+						<hediffDef>HediffDef_Invulnerable</hediffDef>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_ThrowMeteor</verbClass>
+						<label>Heavenly concealed</label>
+						<description>Summons a meteor from space and drops it on a chosen location</description>
+						<commandIcon>GUI/meteor</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>true</canTargetBuildings>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_PrupleProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_TeleportTargetAway</verbClass>
+						<label>Allmighty push</label>
+						<description>Push the target away from you</description>
+						<commandIcon>GUI/PushAway</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>True</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+						</targetParams>
+						<soundCast>SoundDef_PrupleProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_TeleportToCaster</verbClass>
+						<label>Universal push</label>
+						<description>Pulls the target towards yourself with the power of the Rinnegan</description>
+						<commandIcon>GUI/Push</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>True</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+						</targetParams>
+						<soundCast>SoundDef_PrupleProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+				</verbProps>
+			</li>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_AddSkills">
+				<skillDef>Melee</skillDef>
+				<levels>3</levels>
+			</li>
+		</comps>
+	</HediffDef>
+
+
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_EyeVI</defName>
+		<label>Rinne-Sharingan</label>
+		<description>A combination of two powerful eyes with visual powers.While not so strong,it combines the abilities of both eyes into one</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_Pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>Prostheses_RecipeInstall_EyeVI</defName>
+		<label>Install Rinne-Sharingan.</label>
+		<description>Install Rinne-Sharingan.</description>
+		<jobString>Installing Rinne-Sharingan.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeVI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeVI</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Prostheses_HediffDef_EyeVI</addsHediff>
+	</RecipeDef>
+
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Prostheses_HediffDef_EyeVII</defName>
+		<label>Rinnegan</label>
+		<description>A powerful eye with visual powers which is created by harnessing the power of a Divine fruit.The metal casing is for protection of the Users eye.It's visual powers allow the User to manipulate matter around himself and even space</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_EyeVII</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.0</partEfficiency>
+		</addedPartProps>
+		<woundAnchorRange>0</woundAnchorRange>
+		<displayWound>true</displayWound>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_ThrowMeteor</verbClass>
+						<label>Heavenly concealed</label>
+						<description>Summons a meteor from space and drops it on a chosen location.</description>
+						<commandIcon>GUI/meteor</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>true</canTargetBuildings>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_PrupleProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_TeleportTargetAway</verbClass>
+						<label>Allmighty push</label>
+						<description>Push the target away from yourself.</description>
+						<commandIcon>GUI/PushAway</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>True</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+						</targetParams>
+						<soundCast>SoundDef_PrupleProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_TeleportToCaster</verbClass>
+						<label>Universal push</label>
+						<description>Pulls the target towards yourself with the power of the Rinnegan</description>
+						<commandIcon>GUI/Push</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>True</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+						</targetParams>
+						<soundCast>SoundDef_PrupleProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_EyeVII</defName>
+		<label>Rinnegan</label>
+		<description>A powerful eye with visual powers which is created by harnessing the power of a Divine fruit.The metal casing is for protection of the Users eye.It's visual powers allow the User to manipulate matter around himself and even space</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_Pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>Prostheses_RecipeInstall_EyeVII</defName>
+		<label>Install Rinnegan</label>
+		<description>Install Rinnegan.</description>
+		<jobString>Installing Rinnegan.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeVII</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeVII</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Prostheses_HediffDef_EyeVII</addsHediff>
+	</RecipeDef>
+
+
+
+	<HediffDef ParentName="AddedBodyPartBase">
+		<defName>Prostheses_HediffDef_EyeVIII</defName>
+		<label>Ultimate rinne sharingan</label>
+		<description>TODO!</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_EyeVIII</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>4.0</partEfficiency>
+		</addedPartProps>
+		<woundAnchorRange>0</woundAnchorRange>
+		<displayWound>true</displayWound>
+		<stages> 
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<statOffsets>
+					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.15</AimingDelayFactor>
+					<MeleeHitChance>9</MeleeHitChance>
+					<MeleeDodgeChance>9</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_ThrowMeteor</verbClass>
+						<label>Heavenly concealed</label>
+						<description>Summons a meteor from space and drops it on a chosen location.</description>
+						<commandIcon>GUI/meteor</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>true</canTargetBuildings>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_PrupleProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_TeleportTargetAway</verbClass>
+						<label>Allmighty push</label>
+						<description>Push the target away from yourself.</description>
+						<commandIcon>GUI/PushAway</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>True</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+						</targetParams>
+						<soundCast>SoundDef_PrupleProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_TeleportToCaster</verbClass>
+						<label>Universal push</label>
+						<description>Pulls the target towards yourself with the power of the Rinnegan</description>
+						<commandIcon>GUI/Push</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>True</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+						</targetParams>
+						<soundCast>SoundDef_PrupleProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_AddHediffSelf</verbClass>
+						<label>Byakugan</label>
+						<description>Improves accuracy and aiming time with the power of the Byakugan implant</description>
+						<commandIcon>GUI/EagleEye</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_WhiteProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+						<severity>1</severity>
+						<hediffDef>HediffDef_EagleEye</hediffDef>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_Amaterasu</verbClass>
+						<label>Amaterasu</label>
+						<description>Amaterasu is a Mangekyo Sharingan power, and the highest level of Fire. Said to represent the Material World and Light</description>
+						<commandIcon>GUI/Amaterasu</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+						<damageAmount>15</damageAmount>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_Teleport</verbClass>
+						<label>Kamui teleport</label>
+						<description>The Caster uses this on himfself,sucking himself into his eye to enter Kamui's dimension and then exiting back to whatever close location the user desires.</description>
+						<commandIcon>GUI/Teleport</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_AddHediffSelf</verbClass>
+						<label>Sharingan</label>
+						<description>This puts the user into Sharingan mode,where they can prevent just about any attack for a certain period of time.</description>
+						<commandIcon>GUI/Sharingan</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<!-- self add hediff MUST have 0 warmupTime -->
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+						<severity>1</severity>
+						<hediffDef>HediffDef_Invulnerable</hediffDef>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_MapTeleport</verbClass>
+						<label>teleport to maps</label>
+						<description>TODO!</description>
+						<commandIcon>GUI/TeleportMap</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_Teleport</verbClass>
+						<label>Teleport to the whole map</label>
+						<description>TODO!</description>
+						<commandIcon>GUI/TeleportMap</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+						<ignoreRange>true</ignoreRange>
+						<requireLineOfSight>false</requireLineOfSight>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_EyeVIII</defName>
+		<label>Ultimate rinne sharingan</label>
+		<description>TODO!</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_Pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
+		<defName>Prostheses_RecipeInstall_EyeVIII</defName>
+		<label>Install Ultimate rinne sharingan</label>
+		<description>Install Ultimate rinne sharingan.</description>
+		<jobString>Installing Ultimate rinne sharingan.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeVIII</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeVIII</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Eye</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>Prostheses_HediffDef_EyeVIII</addsHediff>
+	</RecipeDef>
+
+</Defs>

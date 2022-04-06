@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Prostheses_HediffDef_DivineCell</defName>
+		<label>Divine cell</label>
+		<description>TODO!</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_DivineCell</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<displayWound>true</displayWound>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_WoodRelease_Wall</verbClass>
+						<label>Wall rise</label>
+						<description>TODO!</description>
+						<commandIcon>GUI/NM_Verb_WoodRelease_Wall</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<powerCost>30</powerCost>
+						<pattern>
+							<li>(0, 0)</li>
+							<li>(1, 0)</li>
+							<li>(-1, 0)</li>
+							<li>(0, 1)</li>
+							<li>(0, -1)</li>
+						</pattern>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_DivineCell</defName>
+		<label>Divine cell</label>
+		<description>TODO!</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_DivineCell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>Prostheses_RecipeInstall_DivineCell</defName>
+		<label>Install Divine cell</label>
+		<description>Install Divine cell</description>
+		<jobString>Installing Divine cell</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_DivineCell</li>
+					</thingDefs> 
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_DivineCell</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>Prostheses_HediffDef_DivineCell</addsHediff>
+	</RecipeDef>
+</Defs>

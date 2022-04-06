@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4277AC2F-D08C-4676-AC1C-4F8BCA2AFB85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SovereignNarutoMod</RootNamespace>
+    <AssemblyName>SovereignNarutoMod</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Assemblies\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>none</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmaterasuFireUtility.cs" />
+    <Compile Include="AmaterasuFire.cs" />
+    <Compile Include="SNM_FleckMaker.cs" />
+    <Compile Include="FleckDefOf.cs" />
+    <Compile Include="VerbProperties_Ability.cs" />
+    <Compile Include="Verb_Wallrise.cs" />
+    <Compile Include="Verb_ThrowMeteor.cs" />
+    <Compile Include="Verb_TeleportToCaster.cs" />
+    <Compile Include="Verb_TeleportTargetAway.cs" />
+    <Compile Include="Verb_Teleport.cs" />
+    <Compile Include="Building_FruitTree.cs" />
+    <Compile Include="RecipeWorker_MakePawn.cs" />
+    <Compile Include="Verb_MapTeleport.cs" />
+    <Compile Include="Verb_MakeGameCondition.cs" />
+    <Compile Include="Verb_Amaterasu.cs" />
+    <Compile Include="Verb_AddHediffTarget.cs" />
+    <Compile Include="Verb_AbilityHediff.cs" />
+    <Compile Include="CompUseEffect_Fruit.cs" />
+    <Compile Include="CompProperties_RaceComp.cs" />
+    <Compile Include="Comp_RaceComp.cs" />
+    <Compile Include="ThoughtUtility_CanGetThought_SovereignNarutoModPatch.cs" />
+    <Compile Include="Hediff_Fruit.cs" />
+    <Compile Include="Window_MapTeleport.cs" />
+    <Compile Include="Gizmo_TreeFuel.cs" />
+    <Compile Include="Start.cs" />
+    <Compile Include="HumanlikeRacesPatch.cs" />
+    <Compile Include="DefModExtension_RecipeMakePawn.cs" />
+    <Compile Include="HediffCompProperties_AddSkills.cs" />
+    <Compile Include="HediffCompProperties_Ability.cs" />
+    <Compile Include="HediffComp_AddSkills.cs" />
+    <Compile Include="HediffComp_Ability.cs" />
+    <Compile Include="Hediff_Illusion.cs" />
+    <Compile Include="JobDefOfLocal.cs" />
+    <Compile Include="PawnKindDefOfLocal.cs" />
+    <Compile Include="StatDefOfLocal.cs" />
+    <Compile Include="Gizmo_TreeFruit.cs" />
+    <Compile Include="Gizmo_Power.cs" />
+    <Compile Include="Command_HediffAbility.cs" />
+    <Compile Include="GameCondition_MoonIllusion.cs" />
+    <Compile Include="JobDriver_SacrificeSelf.cs" />
+    <Compile Include="ThingDefOfLocal.cs" />
+    <Compile Include="HediffDefOfLocal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

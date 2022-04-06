@@ -4,7 +4,7 @@
 <ThingDef>
     <defName>NM_BlackFire</defName>
     <label>amaterasu fire</label>
-    <thingClass>NarutoMod.NM_BlackSpark</thingClass>
+    <thingClass>NarutoMod.NM_BlackFire</thingClass>
     <category>Attachment</category>
     <tickerType>Normal</tickerType>
     <graphicData>

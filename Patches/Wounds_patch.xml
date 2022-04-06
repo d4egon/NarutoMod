@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/FleshTypeDef[defName="Normal"]/hediffWounds</xpath>
+		<value>
+			<li>
+				<hediff>Prostheses_HediffDef_EyeIII</hediff>
+				<wounds>
+					<li>
+						<textureSouth>Things/Items/EyeIII/EyeIII_south</textureSouth>
+						<textureNorth>Things/Items/EyeIII/EyeIII_south</textureNorth>
+						<textureEast>Things/Items/EyeIII/EyeIII_east</textureEast>
+						<textureWest>Things/Items/EyeIII/EyeIII_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+				</wounds>
+			</li>
+		</value>
+	</Operation>
+
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/FleshTypeDef[defName="Normal"]/hediffWounds</xpath>
+		<value>
+			<li>
+				<hediff>Prostheses_HediffDef_EyeIV</hediff>
+				<wounds>
+					<li>
+						<textureSouth>Things/Items/EyeIV/EyeIV_south</textureSouth>					
+						<textureEast>Things/Items/EyeIV/EyeIV_east</textureEast>
+						<textureNorth>Things/Items/EyeIV/EyeIV_south</textureNorth>
+						<textureWest>Things/Items/EyeIV/EyeIV_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+				</wounds>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/FleshTypeDef[defName="Normal"]/hediffWounds</xpath>
+		<value>
+			<li>
+				<hediff>Prostheses_HediffDef_EyeIV</hediff>
+				<wounds>
+					<li>
+						<textureSouth>Things/Items/EyeIV/EyeIV_south</textureSouth>					
+						<textureEast>Things/Items/EyeIV/EyeIV_east</textureEast>
+						<textureNorth>Things/Items/EyeIV/EyeIV_south</textureNorth>
+						<textureWest>Things/Items/EyeIV/EyeIV_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+				</wounds>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/FleshTypeDef[defName="Normal"]/hediffWounds</xpath>
+		<value>
+			<li>
+				<hediff>Prostheses_HediffDef_EyeV</hediff>
+				<wounds>
+					<li>
+						<textureSouth>Things/Items/EyeV/EyeV_south</textureSouth>					
+						<textureEast>Things/Items/EyeV/EyeV_east</textureEast>
+						<textureNorth>Things/Items/EyeV/EyeV_south</textureNorth>
+						<textureWest>Things/Items/EyeV/EyeV_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+				</wounds>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/FleshTypeDef[defName="Normal"]/hediffWounds</xpath>
+		<value>
+			<li>
+				<hediff>Prostheses_HediffDef_EyeVI</hediff>
+				<wounds>
+					<li>
+						<textureSouth>Things/Items/EyeVI/EyeVI_south</textureSouth>					
+						<textureEast>Things/Items/EyeVI/EyeVI_east</textureEast>
+						<textureNorth>Things/Items/EyeVI/EyeVI_south</textureNorth>
+						<textureWest>Things/Items/EyeVI/EyeVI_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+				</wounds>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/FleshTypeDef[defName="Normal"]/hediffWounds</xpath>
+		<value>
+			<li>
+				<hediff>Prostheses_HediffDef_EyeVII</hediff>
+				<wounds>
+					<li>
+						<textureSouth>Things/Items/EyeVII/EyeVII_south</textureSouth>					
+						<textureEast>Things/Items/EyeVII/EyeVII_east</textureEast>
+						<textureNorth>Things/Items/EyeVII/EyeVII_south</textureNorth>
+						<textureWest>Things/Items/EyeVII/EyeVII_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+				</wounds>
+			</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/FleshTypeDef[defName="Normal"]/hediffWounds</xpath>
+		<value>
+			<li>
+				<hediff>Prostheses_HediffDef_EyeVIII</hediff>
+				<wounds>
+					<li>
+						<textureSouth>Things/Items/EyeVIII/EyeVIII_south</textureSouth>					
+						<textureEast>Things/Items/EyeVIII/EyeVIII_east</textureEast>
+						<textureNorth>Things/Items/EyeVIII/EyeVIII_south</textureNorth>
+						<textureWest>Things/Items/EyeVIII/EyeVIII_east</textureWest>
+						<flipWest>true</flipWest>
+						<flipOnWoundAnchorTag>LeftEye</flipOnWoundAnchorTag>
+						<flipOnRotation>South</flipOnRotation>
+						<scale>0.85</scale>
+					</li>
+				</wounds>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

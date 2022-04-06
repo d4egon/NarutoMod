@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef>
+    <defName>NM_BlackFire</defName>
+    <label>amaterasu fire</label>
+    <thingClass>NarutoMod.NM_BlackSpark</thingClass>
+    <category>Attachment</category>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Special/NM_BlackFire</texPath>
+      <graphicClass>Graphic_Flicker</graphicClass>
+      <shaderType>TransparentPostLight</shaderType>
+    </graphicData> 
+    <altitudeLayer>PawnState</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+  </ThingDef>
+  
+  <ThingDef>
+    <defName>NM_BlackSpark</defName>
+    <label>black spark</label>
+    <category>Projectile</category>
+    <thingClass>NarutoMod.NM_BlackSpark</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Spark</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <neverMultiSelect>true</neverMultiSelect>
+    <projectile>
+      <alwaysFreeIntercept>true</alwaysFreeIntercept>
+      <speed>1.5</speed>
+    </projectile>
+  </ThingDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>NM_BlackMicroSparks</defName>
+    <graphicData>
+      <texPath>Things/Mote/NM_BlackMicroSparks</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.75</fadeInTime>
+    <solidTime>0.5</solidTime>
+    <fadeOutTime>0.65</fadeOutTime>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>NM_BlackFireGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/NM_BlackFireGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.75</fadeInTime>
+    <solidTime>1.08</solidTime>
+    <fadeOutTime>0.8</fadeOutTime>
+  </FleckDef>
+  
+</Defs>

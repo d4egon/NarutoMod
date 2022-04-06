@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="InfectionBase">
+		<defName>HediffDef_EagleEye</defName>
+		<label>Byakugan</label>
+		<description>Vision is mobilized through the influence of power.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<tendable>false</tendable>
+		<makesSickThought>false</makesSickThought>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>15000~15000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="InfectionBase">
+		<defName>HediffDef_Regeneration</defName>
+		<label>Regeneration</label>
+		<description>Mobilization of the body, accelerating regeneration.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<tendable>false</tendable>
+		<makesSickThought>false</makesSickThought>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>15000~15000</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<naturalHealingFactor>3</naturalHealingFactor>
+				<totalBleedFactor>0.5</totalBleedFactor>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="InfectionBase">
+		<defName>HediffDef_Invulnerable</defName>
+		<label>Invulnerable</label>
+		<description>Your body is invulnerable for attacks.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<tendable>false</tendable>
+		<makesSickThought>false</makesSickThought>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>7500~7500</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<statFactors>
+					<IncomingDamageFactor>0.0</IncomingDamageFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

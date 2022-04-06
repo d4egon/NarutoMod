@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+	
+	<NarutoMod.Messages.TargetUnflammable>Target unflammable</NarutoMod.Messages.TargetUnflammable>
+	<NarutoMod.Messages.CellsNullOrEmpty>There is no free space around to teleport the target away from you.</NarutoMod.Messages.CellsNullOrEmpty>
+	
+	<NarutoMod.Messages.TryFindCellFalse>Unable to teleport to the map. There is no suitable place.</NarutoMod.Messages.TryFindCellFalse>
+	
+	
+	<NarutoMod.GUI.CasterIsBurning>{0} is burning</NarutoMod.GUI.CasterIsBurning>
+	<NarutoMod.GUI.CasterIsDowned>{0} is downed</NarutoMod.GUI.CasterIsDowned>
+	<NarutoMod.GUI.PowerIsLow>Powers is low. Need as min {0}</NarutoMod.GUI.PowerIsLow>
+	<NarutoMod.GUI.Power>Power</NarutoMod.GUI.Power>
+	<NarutoMod.GUI.PowerGain>Power gain {0} per day</NarutoMod.GUI.PowerGain>
+	
+	<NarutoMod.GUI.MapsList>Allowed maps</NarutoMod.GUI.MapsList>
+	<NarutoMod.GUI.TileId>tile id</NarutoMod.GUI.TileId>
+	<NarutoMod.GUI.NullMapsList>There are no maps available to teleport.</NarutoMod.GUI.NullMapsList>
+	
+	
+	<NarutoMod.FloatMenuOptions.Sacrifice>Sacrifice self</NarutoMod.FloatMenuOptions.Sacrifice>
+
+</LanguageData>

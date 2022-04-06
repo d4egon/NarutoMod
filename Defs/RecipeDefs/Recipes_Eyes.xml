@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<RecipeDef Name="RecipeDef_EyeBase" Abstract="true">
+		<workSkill>Crafting</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workAmount>3000</workAmount>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>EyeCraftingSpot</li>	
+		</recipeUsers>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="RecipeDef_EyeBase">
+		<defName>RecipeDef_EyeIII</defName>
+		<label>make Byakugan</label>
+		<description>Make Byakugan.</description>
+		<jobString>Making Byakugan.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>250</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Prostheses_ThingDef_EyeIII>1</Prostheses_ThingDef_EyeIII>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="RecipeDef_EyeBase">
+		<defName>RecipeDef_EyeIV</defName>
+		<label>make Mangekyou Sharingan</label>
+		<description>Make Mangekyou Sharingan.</description>
+		<jobString>Making Mangekyou Sharingan.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeV</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeV</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeV</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Prostheses_ThingDef_EyeIV>1</Prostheses_ThingDef_EyeIV>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="RecipeDef_EyeBase">
+		<defName>RecipeDef_EyeV</defName>
+		<label>make Sharingan</label>
+		<description>Make Sharingan.</description>
+		<jobString>Making Sharingan.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>250</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Prostheses_ThingDef_EyeV>1</Prostheses_ThingDef_EyeV>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="RecipeDef_EyeBase">
+		<defName>RecipeDef_EyeVI</defName>
+		<label>make Rinne-Sharingan</label>
+		<description>Make Rinne-Sharingan.</description>
+		<jobString>Making Rinne-Sharingan.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeV</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeVII</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeV</li>
+				<li>Prostheses_ThingDef_EyeVII</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeV</li>
+				<li>Prostheses_ThingDef_EyeVII</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Prostheses_ThingDef_EyeVI>1</Prostheses_ThingDef_EyeVI>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="RecipeDef_EyeBase">
+		<defName>RecipeDef_EyeVII</defName>
+		<label>make Rinnegan</label>
+		<description>Make Rinnegan.</description>
+		<jobString>Making Rinnegan.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>250</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>ComponentIndustrial</li>
+				<li>Steel</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Prostheses_ThingDef_EyeVII>1</Prostheses_ThingDef_EyeVII>
+		</products>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="RecipeDef_EyeBase">
+		<defName>RecipeDef_EyeVIII</defName>
+		<label>make Ultimate rinne sharingan</label>
+		<description>Make Ultimate rinne sharingan.</description>
+		<jobString>Making Ultimate rinne sharingan.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeIII</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeVI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_EyeIV</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeIV</li>
+				<li>Prostheses_ThingDef_EyeVI</li>
+				<li>Prostheses_ThingDef_EyeIII</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>Prostheses_ThingDef_EyeIV</li>
+				<li>Prostheses_ThingDef_EyeVI</li>
+				<li>Prostheses_ThingDef_EyeIII</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<Prostheses_ThingDef_EyeVIII>1</Prostheses_ThingDef_EyeVIII>
+		</products>
+	</RecipeDef>
+
+</Defs>

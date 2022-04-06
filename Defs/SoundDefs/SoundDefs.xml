@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SoundDef>
+		<defName>SoundDef_WhiteProshesisSound</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>WhiteProshesisSound</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>30~30</volumeRange>
+				<pitchRange>0.8529412~1.321177</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>SoundDef_RedProshesisSound</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>RedProshesisSound</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>30~30</volumeRange>
+				<pitchRange>0.8529412~1.321177</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>SoundDef_PrupleProshesisSound</defName>
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>PrupleProshesisSound</clipFolderPath>
+					</li>
+				</grains>
+				<volumeRange>30~30</volumeRange>
+				<pitchRange>0.8529412~1.321177</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

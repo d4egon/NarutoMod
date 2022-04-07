@@ -51,5 +51,21 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	<SoundDef>
+    <defName>WoodRelease</defName>  
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>WoodRelease</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>30~30</volumeRange>           
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
 
 </Defs>

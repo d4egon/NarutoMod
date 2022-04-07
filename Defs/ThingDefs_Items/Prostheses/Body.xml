@@ -17,7 +17,7 @@
 				<verbProps>
 					<li>
 						<verbClass>NarutoMod.Verbs.NM_Verb_WoodRelease_Wall</verbClass>
-						<label>Wall rise</label>
+						<label>Wood Release: Wall</label>
 						<description>TODO!</description>
 						<commandIcon>GUI/NM_Verb_WoodRelease_Wall</commandIcon>
 						<hasStandardCommand>true</hasStandardCommand>
@@ -29,7 +29,7 @@
 							<canTargetBuildings>false</canTargetBuildings>
 							<canTargetLocations>true</canTargetLocations>
 						</targetParams>
-						<soundCast>SoundDef_RedProshesisSound</soundCast>
+						<soundCast>WoodRelease</soundCast>
 						<powerCost>30</powerCost>
 						<pattern>
 							<li>(0, 0)</li>

@@ -56,6 +56,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Verbs\NM_Verb_WoodRelease_DeepForest.cs" />
     <Compile Include="NM_BlackSpark.cs" />
     <Compile Include="NM_BlackFire.cs" />
     <Compile Include="NM_BlackFireUtility.cs" />
@@ -67,7 +68,7 @@
     <Compile Include="Verbs\NM_Verb_AddHediffTarget.cs" />
     <Compile Include="Verbs\NM_Verb_AddHediffSelf.cs" />
     <Compile Include="Verbs\NM_Verb_MapTeleport.cs" />
-    <Compile Include="Verbs\NM_Verb_WoodRelease_Wall.cs" />
+    <Compile Include="Verbs\NM_Verb_WoodRelease_DomedWall.cs" />
     <Compile Include="Verbs\NM_Verb_TeleportTargetAway.cs" />
     <Compile Include="Verbs\NM_Verb_TeleportToCaster.cs" />
     <Compile Include="Verbs\NM_Verb_ThrowMeteor.cs" />

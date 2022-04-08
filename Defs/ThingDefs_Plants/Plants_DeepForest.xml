@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="DeciduousTreeBase">
+    <defName>NM_DeepForestTree</defName>
+    <label>oak tree</label>
+    <description>A hardwood tree. Oaks take a long time to grow, but their wood is so strong that 'oak' is used as a metaphor for strength across many cultures.</description>
+    <graphicData>
+      <texPath>Things/Plant/TreeOak</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shadowData>
+        <volume>(0.2, 0.35, 0.13)</volume>
+        <offset>(-0.03,0,-0.44)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+      <BeautyOutdoors>2</BeautyOutdoors>
+    </statBases>
+    <plant>
+      <growDays>30</growDays>
+      <leaflessGraphicPath>Things/Plant/TreeOak_Leafless</leaflessGraphicPath>
+      <harvestWork>1400</harvestWork>
+      <harvestYield>46</harvestYield>
+      <wildClusterWeight>35</wildClusterWeight>
+    </plant>
+  </ThingDef>
+  
+  </Defs>

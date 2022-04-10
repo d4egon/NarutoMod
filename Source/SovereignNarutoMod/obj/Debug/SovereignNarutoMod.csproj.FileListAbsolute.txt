@@ -1,2 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SovereignNarutoMod\Source\SovereignNarutoMod\obj\Debug\SovereignNarutoMod.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SovereignNarutoMod\Source\SovereignNarutoMod\obj\Debug\SovereignNarutoMod.csproj.CoreCompileInputs.cache

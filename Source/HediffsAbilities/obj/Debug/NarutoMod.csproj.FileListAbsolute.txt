@@ -1,7 +1,0 @@
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SovereignNarutoMod\Source\NarutoMod\obj\Debug\NarutoMod.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SovereignNarutoMod\Source\NarutoMod\obj\Debug\NarutoMod.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SovereignNarutoMod\Assemblies\NarutoMod.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SovereignNarutoMod\Source\NarutoMod\obj\Debug\NarutoMod.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SovereignNarutoMod\Source\HediffsAbilities\obj\Debug\NarutoMod.csproj.AssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SovereignNarutoMod\Source\HediffsAbilities\obj\Debug\NarutoMod.csproj.CoreCompileInputs.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\SovereignNarutoMod\Source\HediffsAbilities\obj\Debug\NarutoMod.dll

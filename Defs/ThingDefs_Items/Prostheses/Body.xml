@@ -15,6 +15,7 @@
 		<comps>
 			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
 				<verbProps>
+					
 					<li>
 						<verbClass>NarutoMod.Verbs.NM_Verb_WoodRelease_DomedWall</verbClass>
 						<label>Wood Style: Domed Wall</label>
@@ -29,7 +30,7 @@
 							<canTargetBuildings>false</canTargetBuildings>
 							<canTargetLocations>true</canTargetLocations>
 						</targetParams>
-						<soundCast>WoodRelease</soundCast>
+						<soundCast>NM_WoodRelease</soundCast>
 						<powerCost>30</powerCost>
 						<pattern>
 							<li>(0, 0)</li>
@@ -39,6 +40,7 @@
 							<li>(0, -1)</li>
 						</pattern>
 					</li>
+					
 					<li>
 						<verbClass>NarutoMod.Verbs.NM_Verb_WoodRelease_DeepForest</verbClass>
 						<label>Wood Style: Deep Forest Emerge</label>
@@ -53,7 +55,7 @@
 							<canTargetBuildings>false</canTargetBuildings>
 							<canTargetLocations>true</canTargetLocations>
 						</targetParams>
-						<soundCast>WoodRelease</soundCast>
+						<soundCast>NM_WoodRelease</soundCast>
 						<powerCost>30</powerCost>
 						<pattern>
 																			<li>(5, -1)</li><li>(5, -2)</li><li>(5, 0)</li><li>(5, 1)</li><li>(5, 2)</li>
@@ -112,5 +114,79 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<addsHediff>Prostheses_HediffDef_DivineCell</addsHediff>
+	</RecipeDef>
+
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Prostheses_HediffDef_NM_SummoningContract_Dog</defName>
+		<label>summoning contract: dog</label>
+		<description>TODO!</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_NM_SummoningContract_Dog</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<displayWound>false</displayWound>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_SummonDog</verbClass>
+						<label>Summoning Jutsu: Dog</label>
+						<description>TODO!</description>
+						<soundCast>NM_SummoningPoof</soundCast>
+						<commandIcon>GUI/SummonDog</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>2</range>
+						<warmupTime>2</warmupTime>
+						<powerCost>100</powerCost>
+					</li>
+					<li>
+					    <spawnDef>NM_SummonDog</spawnDef>
+			        </li>
+				</verbProps>
+			</li>
+		</comps>
+	</HediffDef>
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_NM_SummoningContract_Dog</defName>
+		<label>summoning contract: dog</label>
+		<description>TODO!</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_DivineCell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>Prostheses_RecipeInstall_NM_SummoningContract_Dog</defName>
+		<label>summoning contract: dog</label>
+		<description>summoning contract: dog</description>
+		<jobString>Installing summoning contract: dog</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_NM_SummoningContract_Dog</li>
+					</thingDefs> 
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_NM_SummoningContract_Dog</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>Prostheses_HediffDef_NM_SummoningContract_Dog</addsHediff>
 	</RecipeDef>
 </Defs>

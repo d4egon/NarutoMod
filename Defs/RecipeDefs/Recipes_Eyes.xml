@@ -9,7 +9,7 @@
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		<recipeUsers>
-			<li>EyeCraftingSpot</li>	
+			<li>NM_EyeCraftingSpot</li>	
 		</recipeUsers>
 	</RecipeDef>
 	

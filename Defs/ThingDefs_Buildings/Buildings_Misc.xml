@@ -6,6 +6,9 @@
 		<label>raised woods</label>
 		<description>It will collapse in time.</description>
 		<graphicData>
+			<texPath>Things/Building/Linked/Rock_Atlas</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<linkType>CornerFiller</linkType>
 			<color>(108,57,21)</color>
 		</graphicData>
 		<tickerType>Rare</tickerType>
@@ -15,7 +18,7 @@
 		<building>
 			<isNaturalRock>false</isNaturalRock>
 			<claimable>false</claimable>
-			<destroySound>ChunkRock_Drop</destroySound>
+			<destroySound>NM_DeepForestCreak</destroySound>
 		</building>
 		<comps>
 			<li Class="CompProperties_Lifespan">

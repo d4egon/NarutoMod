@@ -19,7 +19,7 @@ namespace NarutoMod.Verbs
                 entity.DeSpawn(0);
             foreach (IntVec3 affectedCell in AffectedCells(CurrentTarget.Cell, map))
                 GenSpawn.Spawn(NM_ThingDefOf.NM_DeepForestTree, affectedCell, map, 0);
-            GenExplosion.DoExplosion(CurrentTarget.Cell, map, smokeRadius, DamageDefOf.Stun, null, -1, -1f, null, null, null, null, ThingDefOf.Gas_Smoke, 1f, 1, false, null, 0f, 1, 0f, false, null, null);
+            GenExplosion.DoExplosion(CurrentTarget.Cell, map, smokeRadius, DamageDefOf.Crush, null, 20, 1.2f, DefOfs.NM_SoundDefOf.NM_DeepForestCreak, null, null, null, ThingDefOf.Gas_Smoke, 1f, 1, false, null, 0f, 1, 0f, false, null, null);
             AddEffecterToMaintain(EffecterDefOf.DryadEmergeFromCocoon.Spawn(currentTarget.Thing.Position, CasterPawn.Map, 1f), currentTarget.Cell, 120, currentTarget.Pawn);
             foreach (Thing thing in thingList)
             {

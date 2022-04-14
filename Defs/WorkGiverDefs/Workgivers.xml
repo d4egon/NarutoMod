@@ -9,7 +9,7 @@
 		<workType>Crafting</workType>
 		<priorityInType>130</priorityInType>
 		<fixedBillGiverDefs>
-			<li>EyeCraftingSpot</li>
+			<li>NM_EyeCraftingSpot</li>
 		</fixedBillGiverDefs>
 		<verb>make</verb>
 		<gerund>Making eye</gerund>

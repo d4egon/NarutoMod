@@ -2,12 +2,12 @@
 <Defs>
 
 	<ThingDef ParentName="BuildingBase">
-		<defName>EyeCraftingSpot</defName>
+		<defName>NM_EyeCraftingSpot</defName>
 		<label>Strange Statue </label>
 		<description>This mysterious Statue is able to transform the Divine fruit into different things.Nobody knows how or why.People just know when they stand in front of it .Sometimes the statue will open it's eyes and look around in panic and terror until it just closes them again.</description>
 		<thingClass>Building_WorkTable</thingClass>
 		<graphicData>
-			<texPath>Things/Buildings/EyeCraftSpot</texPath>
+			<texPath>Things/Building/NM_EyeCraftingSpot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>

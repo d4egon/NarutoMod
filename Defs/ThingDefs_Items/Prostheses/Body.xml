@@ -140,13 +140,11 @@
 						<hasStandardCommand>true</hasStandardCommand>
 						<targetable>true</targetable>
 						<onlyManualCast>true</onlyManualCast>
-						<range>2</range>
+						<range>20</range>
 						<warmupTime>2</warmupTime>
 						<powerCost>100</powerCost>
+						<spawnDef>NM_SummonDog</spawnDef>
 					</li>
-					<li>
-					    <spawnDef>NM_SummonDog</spawnDef>
-			        </li>
 				</verbProps>
 			</li>
 		</comps>

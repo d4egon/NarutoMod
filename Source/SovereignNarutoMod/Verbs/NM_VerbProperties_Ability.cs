@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Verse;
+using RimWorld;
 
 namespace NarutoMod.Verbs
 {
@@ -17,7 +18,6 @@ namespace NarutoMod.Verbs
         //public GameConditionDef gameConditionDef;
         public List<IntVec2> pattern;
         public bool ignoreRange;
-        public new static ThingDef spawnDef;
-        
+      
     }
 }

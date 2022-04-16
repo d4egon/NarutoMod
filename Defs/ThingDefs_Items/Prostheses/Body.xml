@@ -132,18 +132,19 @@
 			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
 				<verbProps>
 					<li>
-						<verbClass>NarutoMod.Verbs.NM_Verb_SummonDog</verbClass>
+						<verbClass>NarutoMod.Verbs.NM_Verb_SummonThing_Dog</verbClass>
 						<label>Summoning Jutsu: Dog</label>
 						<description>TODO!</description>
 						<soundCast>NM_SummoningPoof</soundCast>
 						<commandIcon>GUI/SummonDog</commandIcon>
 						<hasStandardCommand>true</hasStandardCommand>
 						<targetable>true</targetable>
+						<canTargetLocations>true</canTargetLocations>
 						<onlyManualCast>true</onlyManualCast>
-						<range>20</range>
+						<range>30</range>
 						<warmupTime>2</warmupTime>
 						<powerCost>100</powerCost>
-						<spawnDef>NM_SummonDog</spawnDef>
+						<pawnKindToSpawn>NM_SummonPawnKind_Dog</pawnKindToSpawn>
 					</li>
 				</verbProps>
 			</li>

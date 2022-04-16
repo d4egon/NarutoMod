@@ -18,6 +18,6 @@ namespace NarutoMod
 
         //public static ThingDef NM_MeditationSpot;
 
-        public static ThingDef NM_SummonDog;
+        public static ThingDef NM_SummonThing_Dog;
     }
 }

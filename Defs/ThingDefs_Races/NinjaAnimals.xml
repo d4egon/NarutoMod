@@ -1,14 +1,62 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef ParentName="BasePlayerPawnKind">
-    <defName>NM_SummonCreature</defName>
-    <race>NM_SummonDog</race>
-	<initialResistanceRange>9~15</initialResistanceRange>
+<PawnKindDef ParentName="AnimalKindBase">
+    <defName>NM_SummonPawnKind_Dog</defName>
+	<race>NM_SummonThing_Dog</race>
+	<combatPower>200</combatPower>
+	<lifeStages>
+      <li>
+        <label>ninja husky puppy</label>
+        <labelPlural>ninja husky puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Husky/Husky</texPath>
+          <drawSize>1.0</drawSize>
+          <color>(137,133,133)</color>
+          <shaderType>CutoutComplex</shaderType>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Husky/Husky</texPath>
+          <drawSize>1.5</drawSize>
+          <color>(137,133,133)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Husky/Husky</texPath>
+          <drawSize>1.75</drawSize>
+          <color>(137,133,133)</color>
+          <shaderType>CutoutComplex</shaderType>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
   </PawnKindDef>
 
 <ThingDef ParentName="AnimalThingBase">
-    <defName>NM_SummonDog</defName>
+    <defName>NM_SummonThing_Dog</defName>
     <label>ninja husky</label>
     <devNote>cat-1</devNote>
     <description>A large, energetic dog with ninja-training and a thick fur coat for remaining comfortable in arctic environments.</description>
@@ -21,11 +69,6 @@
 		<li Class="AnimalBehaviours.CompProperties_Draftable">
 			<makeNonFleeingToo>true</makeNonFleeingToo>
 		</li>
-			<li Class="CompProperties_Lifespan">
-				<lifespanTicks>10000</lifespanTicks>
-				<expireEffect>RaisedRock_Collapse</expireEffect>
-			</li>
-		
 	</comps>
     <tools>
       <li>
@@ -68,14 +111,12 @@
       </li>
     </tools>
     <race>
-      <thinkTreeMain>Humanlike</thinkTreeMain>
-      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
-      <intelligence>Humanlike</intelligence>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <petness>1</petness>
       <baseBodySize>0.86</baseBodySize>
       <baseHungerRate>0.5</baseHungerRate>
       <baseHealthScale>1.05</baseHealthScale>
+	  <useMeatFrom>Husky</useMeatFrom>
       <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
       <leatherDef>Leather_Dog</leatherDef>
       <nameOnTameChance>1</nameOnTameChance>

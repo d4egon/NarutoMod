@@ -19,5 +19,6 @@ namespace NarutoMod.Verbs
         public List<IntVec2> pattern;
         public bool ignoreRange;
         public PawnKindDef pawnKindToSpawn;
+        public bool canTargetLocations;
     }
 }

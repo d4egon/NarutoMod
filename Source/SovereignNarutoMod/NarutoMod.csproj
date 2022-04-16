@@ -58,7 +58,7 @@
   <ItemGroup>
     <Compile Include="DefOfs\NM_PawnKindDefOf.cs" />
     <Compile Include="DefOfs\NM_SoundDefOf.cs" />
-    <Compile Include="Verbs\NM_Verb_SummonDog.cs" />
+    <Compile Include="Verbs\NM_Verb_SummonThing_Dog.cs" />
     <Compile Include="Verbs\NM_Verb_WoodRelease_DeepForest.cs" />
     <Compile Include="NM_BlackSpark.cs" />
     <Compile Include="NM_BlackFire.cs" />

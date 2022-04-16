@@ -4,22 +4,17 @@ using Verse;
 using System.Collections.Generic;
 using NarutoMod.Hediffs;
 using System.Text;
+using NarutoMod.DefOfs;
 
 namespace NarutoMod.Verbs
 {
-    class NM_Verb_SummonDog : NM_Verb_AbilityHediff
+    class NM_Verb_SummonThing_Dog : NM_Verb_AbilityHediff
 	{
-		public PawnKindDef pawnKindToSpawn = DefOfs.NM_PawnKindDefOf.NM_SummonCreature;
+		public PawnKindDef pawnKindToSpawn = DefOfs.NM_PawnKindDefOf.NM_SummonPawnKind_Dog;
 		public override void WarmupComplete()
 		{
-			if (base.verbProps.spawnDef == null)
-			{
-				Log.Message("spawnDef == NULL @ NarutoMod.Verbs.NM_Verb_SummonDog");
-			}
-			if (base.CasterPawn.Map == null)
-			{
-				Log.Message("ERROR: CasterPawn.Map == NULL @ NarutoMod.Verbs.NM_Verb_SummonDog");
-			}
+			this.verbProps.targetParams.canTargetLocations.GetHashCode();
+
 			base.WarmupComplete();
             base.CasterPawn.stances.stunner.StunFor(45, CasterPawn, false, false);
 			GenSpawn.Spawn(PawnGenerator.GeneratePawn(

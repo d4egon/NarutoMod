@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>NM_SummonCreature</defName>
+    <race>NM_SummonDog</race>
+	<initialResistanceRange>9~15</initialResistanceRange>
+  </PawnKindDef>
+
 <ThingDef ParentName="AnimalThingBase">
     <defName>NM_SummonDog</defName>
-	
     <label>ninja husky</label>
     <devNote>cat-1</devNote>
     <description>A large, energetic dog with ninja-training and a thick fur coat for remaining comfortable in arctic environments.</description>
@@ -15,6 +21,11 @@
 		<li Class="AnimalBehaviours.CompProperties_Draftable">
 			<makeNonFleeingToo>true</makeNonFleeingToo>
 		</li>
+			<li Class="CompProperties_Lifespan">
+				<lifespanTicks>10000</lifespanTicks>
+				<expireEffect>RaisedRock_Collapse</expireEffect>
+			</li>
+		
 	</comps>
     <tools>
       <li>
@@ -57,6 +68,9 @@
       </li>
     </tools>
     <race>
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
       <body>QuadrupedAnimalWithPawsAndTail</body>
       <petness>1</petness>
       <baseBodySize>0.86</baseBodySize>
@@ -78,7 +92,7 @@
           <li>(3, 0)</li>
         </points>
       </litterSizeCurve>
-      <lifeExpectancy>12</lifeExpectancy>
+      <lifeExpectancy>80</lifeExpectancy>
       <lifeStageAges>
         <li>
           <def>AnimalBaby</def>

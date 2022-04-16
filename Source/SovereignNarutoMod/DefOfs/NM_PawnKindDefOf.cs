@@ -34,6 +34,7 @@ namespace NarutoMod.DefOfs
         //public static PawnKindDef NM_Bijuu3;
         //public static PawnKindDef NM_Bijuu2;
         //public static PawnKindDef NM_Bijuu1;
+        public static PawnKindDef NM_SummonCreature;
     }
 
 }

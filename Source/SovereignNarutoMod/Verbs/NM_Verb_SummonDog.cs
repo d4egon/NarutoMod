@@ -9,6 +9,7 @@ namespace NarutoMod.Verbs
 {
     class NM_Verb_SummonDog : NM_Verb_AbilityHediff
 	{
+		public PawnKindDef pawnKindToSpawn = DefOfs.NM_PawnKindDefOf.NM_SummonCreature;
 		public override void WarmupComplete()
 		{
 			if (base.verbProps.spawnDef == null)
@@ -21,8 +22,16 @@ namespace NarutoMod.Verbs
 			}
 			base.WarmupComplete();
             base.CasterPawn.stances.stunner.StunFor(45, CasterPawn, false, false);
-			GenSpawn.Spawn(NM_ThingDefOf.NM_SummonDog, base.currentTarget.Cell, base.caster.Map);
-			
+			GenSpawn.Spawn(PawnGenerator.GeneratePawn(
+							new PawnGenerationRequest(
+								Props.pawnKindToSpawn,
+								caster.Faction,
+								newborn: false,
+								allowAddictions: false)
+						),
+						caster.Position,
+						caster.Map
+					);
 		}
 	}
 }

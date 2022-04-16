@@ -18,6 +18,6 @@ namespace NarutoMod.Verbs
         //public GameConditionDef gameConditionDef;
         public List<IntVec2> pattern;
         public bool ignoreRange;
-      
+        public PawnKindDef pawnKindToSpawn;
     }
 }

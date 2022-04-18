@@ -7,21 +7,23 @@ namespace NarutoMod.DefOfs
     public static class NM_PawnKindDefOf
     {
         //Summoning Jutsu
-        //public static PawnKindDef NM_SummonDog;
-        //public static PawnKindDef NM_SummonSnake;
-        //public static PawnKindDef NM_SummonToad;
-        //public static PawnKindDef NM_SummonMonkey;
-        //public static PawnKindDef NM_SummonHawk;
-        //public static PawnKindDef NM_SummonShark;
+        public static PawnKindDef NM_SummonPawnKind_Dog;
+        public static PawnKindDef NM_SummonPawnKind_Snake;
+        public static PawnKindDef NM_SummonPawnKind_Toad;
+        public static PawnKindDef NM_SummonPawnKind_Monkey;
+        public static PawnKindDef NM_SummonPawnKind_Hawk;
+        public static PawnKindDef NM_SummonPawnKind_Shark;
+        public static PawnKindDef NM_SummonPawnKind_ShadowClone;
+        public static PawnKindDef NM_SummonPawnKind_WoodClone;
         //public static PawnKindDef NM_EdoTensei;
-        //public static PawnKindDef NM_SummonShadowClone;
-        //public static PawnKindDef NM_SummonWoodClone;
 
+        //Races
+        public static PawnKindDef NM_Ninshu;
         //Sage Modus
-        //public static PawnKindDef NM_SageModeSnake;
-        //public static PawnKindDef NM_SageModeToad;
-        //public static PawnKindDef NM_SageModeMonkey;
-        //public static PawnKindDef NM_SageModeShark;
+        public static PawnKindDef NM_Ninshu_Snake;
+        public static PawnKindDef NM_Ninshu_Toad;
+        public static PawnKindDef NM_Ninshu_Monkey;
+        public static PawnKindDef NM_Ninshu_Shark;
 
         //Tailed Beasts
         //public static PawnKindDef NM_Bijuu10;
@@ -34,7 +36,6 @@ namespace NarutoMod.DefOfs
         //public static PawnKindDef NM_Bijuu3;
         //public static PawnKindDef NM_Bijuu2;
         //public static PawnKindDef NM_Bijuu1;
-        public static PawnKindDef NM_SummonPawnKind_Dog;
     }
 
 }

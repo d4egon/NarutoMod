@@ -13,7 +13,7 @@ namespace NarutoMod.Patches
         {
             List<ThingDef> list = ((IEnumerable<ThingDef>)DefDatabase<ThingDef>.AllDefsListForReading).Where(x => x.race != null && x.race.Humanlike && !x.race.IsMechanoid).ToList();
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.AppendLine("Hediff abilities races patch loaded successfully, races affected: ");
+            stringBuilder.AppendLine("NarutoMod races patch loaded successfully, races affected: ");
             foreach (ThingDef thingDef in list)
             {
                 if (thingDef.comps.Find(c => c is NM_CompProperties_RaceComp) == null)

@@ -8,5 +8,6 @@ namespace NarutoMod
     {
         public PawnKindDef pawnKind;
         public HediffDef hediffDef;
+        public BodyPartRecord bodyPart;
     }
 }

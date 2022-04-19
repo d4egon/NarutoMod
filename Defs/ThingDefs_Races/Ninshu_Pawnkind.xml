@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+	
+  <PawnKindDef>
+				<defName>NM_Ninshu</defName>
+				<label>Ninshu</label>
+				<race>NM_Ninshu</race>
+				<combatPower>20</combatPower>
+				<defaultFactionType>PlayerColony</defaultFactionType>
+				<initialResistanceRange>13~21</initialResistanceRange>
+				<initialWillRange>25~40</initialWillRange>
+				<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+				<minGenerationAge>18</minGenerationAge>
+				<isFighter>false</isFighter>
+				<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+
+	</PawnKindDef>	
+	
+  <PawnKindDef>
+				<defName>NM_Ninshu_Monkey</defName>
+				<label>Monkey sage ninshu</label>
+				<race>NM_Ninshu_Monkey</race>
+				<combatPower>20</combatPower>
+				<defaultFactionType>PlayerColony</defaultFactionType>
+				<initialResistanceRange>13~21</initialResistanceRange>
+				<initialWillRange>25~40</initialWillRange>
+				<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+				<minGenerationAge>18</minGenerationAge>
+				<isFighter>false</isFighter>
+				<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+
+	</PawnKindDef>	
+	
+  <PawnKindDef>
+				<defName>NM_Ninshu_Toad</defName>
+				<label>Toad sage ninshu</label>
+				<race>NM_Ninshu_Toad</race>
+				<combatPower>20</combatPower>
+				<defaultFactionType>PlayerColony</defaultFactionType>
+				<initialResistanceRange>13~21</initialResistanceRange>
+				<initialWillRange>25~40</initialWillRange>
+				<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+				<minGenerationAge>18</minGenerationAge>
+				<isFighter>false</isFighter>
+				<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+
+	</PawnKindDef>	
+	
+  <PawnKindDef>
+				<defName>NM_Ninshu_Shark</defName>
+				<label>Shark sage ninshu</label>
+				<race>NM_Ninshu_Shark</race>
+				<combatPower>20</combatPower>
+				<defaultFactionType>PlayerColony</defaultFactionType>
+				<initialResistanceRange>13~21</initialResistanceRange>
+				<initialWillRange>25~40</initialWillRange>
+				<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+				<minGenerationAge>18</minGenerationAge>
+				<isFighter>false</isFighter>
+				<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+
+	</PawnKindDef>	
+	
+  <PawnKindDef>
+				<defName>NM_Ninshu_Snake</defName>
+				<label>Snake sage ninshu</label>
+				<race>NM_Ninshu_Snake</race>
+				<combatPower>20</combatPower>
+				<defaultFactionType>PlayerColony</defaultFactionType>
+				<initialResistanceRange>13~21</initialResistanceRange>
+				<initialWillRange>25~40</initialWillRange>
+				<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+				<minGenerationAge>18</minGenerationAge>
+				<isFighter>false</isFighter>
+				<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+
+	</PawnKindDef>	
+		
+	
+	
+	
+</Defs>

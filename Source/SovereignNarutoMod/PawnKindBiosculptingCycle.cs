@@ -16,7 +16,7 @@ namespace NarutoMod
             }
         }
 
-        
+
 
         public override void CycleCompleted(Pawn occupant)
         {
@@ -25,7 +25,7 @@ namespace NarutoMod
                 parent.InteractionCell,
                 parent.Map
             );
-            
+
             newPawn.Name = occupant.Name;
             newPawn.relations = occupant.relations;
             newPawn.ageTracker.AgeBiologicalTicks = occupant.ageTracker.AgeBiologicalTicks;
@@ -37,6 +37,10 @@ namespace NarutoMod
                 newPawn.story.childhood = occupant.story.childhood;
                 newPawn.story.adulthood = occupant.story.adulthood;
                 newPawn.story.traits = occupant.story.traits;
+                newPawn.story.favoriteColor = occupant.story.favoriteColor;
+                newPawn.story.hairColor = occupant.story.hairColor;
+                newPawn.story.hairDef = occupant.story.hairDef;
+                newPawn.story.bodyType = occupant.story.bodyType;
             }
 
             if (newPawn.skills != null)
@@ -54,14 +58,11 @@ namespace NarutoMod
                 newPawn.ideo = occupant.ideo;
             }
 
-            for (int i = 0; i > 1; i++)
+            if (newPawn.health != null)
             {
-                if (newPawn.health != null)
-                {
-                    newPawn.health = occupant.health;
-                    newPawn.health.AddHediff(Props.hediffDef, null, null, null);
-                }
+                newPawn.health = occupant.health;
             }
+
             if (newPawn.style != null)
             {
                 newPawn.style = occupant.style;

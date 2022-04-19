@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <WorkGiverDef>
+        <defName>NM_HaulToMeditationSpot_Ninshu</defName>
+        <label>Deliver breakfast to meditation spot</label>
+        <giverClass>NarutoMod.WorkGiver_MeditationSpot_Ninshu</giverClass>
+        <workType>Hauling</workType>
+        <verb>deliver</verb>
+        <gerund>delivering</gerund>
+        <priorityInType>109</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+	<WorkGiverDef>
+        <defName>NM_HaulToMeditationSpot_Sage</defName>
+        <label>Deliver breakfast to meditation spot</label>
+        <giverClass>NarutoMod.WorkGiver_MeditationSpot_Sage</giverClass>
+        <workType>Hauling</workType>
+        <verb>deliver</verb>
+        <gerund>delivering</gerund>
+        <priorityInType>109</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+</Defs>

@@ -98,6 +98,8 @@
     <Compile Include="Gizmos\NM_Command_HediffAbility.cs" />
     <Compile Include="Gizmos\NM_Gizmo_Power.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="WorkGiver_MeditationSpot_Ninshu - Copy.cs" />
+    <Compile Include="WorkGiver_MeditationSpot_Sage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />

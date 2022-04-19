@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>NM_MeditationSpot_Sage</defName>
+        <label>Ninshu Sage Meditation Spot</label>
+        <description>TO-DO!</description>
+		<graphicData>
+			<texPath>Things/Building/NM_MeditationSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <defaultPlacingRot>South</defaultPlacingRot>
+        <altitudeLayer>FloorEmplacement</altitudeLayer>
+        <passability>Standable</passability>
+        <pathCost>0</pathCost>
+        <statBases>
+            <WorkToBuild>0</WorkToBuild>
+            <Mass>10</Mass>
+            <BiosculpterPodSpeedFactor>1</BiosculpterPodSpeedFactor>
+        </statBases>
+		<useHitPoints>false</useHitPoints>
+        <size>(1,1)</size>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <hasInteractionCell>true</hasInteractionCell>
+        <building>
+		<hasFuelingPort>true</hasFuelingPort>
+		<haulToContainerDuration>120</haulToContainerDuration>
+		<fixedStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Foods</li>
+                    </categories>
+                    <specialFiltersToDisallow>
+                        <li>AllowPlantFood</li>
+                    </specialFiltersToDisallow>
+                </filter>
+            </fixedStorageSettings>
+            <defaultStorageSettings>
+                <filter>
+                    <categories>
+                        <li>Foods</li>
+                    </categories>
+                    <disallowedCategories>
+                        <li>EggsFertilized</li>
+                    </disallowedCategories>
+                    <disallowedThingDefs>
+                        <li>InsectJelly</li>
+                        <li>MealLavish</li>
+                        <li>MealLavish_Veg</li>
+                        <li>MealLavish_Meat</li>
+                    </disallowedThingDefs>
+                </filter>
+            </defaultStorageSettings>
+			
+            <uninstallWork>0</uninstallWork>
+            <sowTag>SupportPlantsOnly</sowTag>
+			<canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+			<ai_chillDestination>true</ai_chillDestination>
+			<artificialForMeditationPurposes>true</artificialForMeditationPurposes>
+        </building>
+
+        <designationCategory>Misc</designationCategory>
+        <neverMultiSelect>true</neverMultiSelect>
+        <tickerType>Normal</tickerType>
+
+		<inspectorTabs>
+            <li>ITab_BiosculpterNutritionStorage</li>
+        </inspectorTabs>
+
+        <comps>
+			<li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>-1</basePowerConsumption>
+            </li>
+			
+			<li Class="CompProperties_Flickable"/>
+            
+			<li Class="CompProperties_BiosculpterPod">
+                <enterSound>BiosculpterPod_Enter</enterSound>
+                <exitSound>BiosculpterPod_Exit</exitSound>
+                <operatingEffecter>BiosculpterPod_Operating</operatingEffecter>
+                <readyEffecter>BiosculpterPod_Ready</readyEffecter>
+                <selectCycleColor>(0.321, 1, 0.349)</selectCycleColor>
+                <biotunedCycleSpeedFactor>1.25</biotunedCycleSpeedFactor>
+            </li>
+            
+			<li Class="NarutoMod.PawnKindBiosculptingCycle_Properties">
+                <compClass>NarutoMod.PawnKindBiosculptingCycle</compClass>
+                <key>pawnKindChangeSnakeSage</key>
+                <label>Become Snake Sage</label>
+                <durationDays>0.01</durationDays>
+                <iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath>
+                <pawnKind>NM_Ninshu_Snake</pawnKind>
+				<hediffDef>Prostheses_HediffDef_NM_Ninshu_Snake</hediffDef>
+            </li>
+			
+			<li Class="NarutoMod.PawnKindBiosculptingCycle_Properties">
+                <compClass>NarutoMod.PawnKindBiosculptingCycle</compClass>
+                <key>pawnKindChangeToadSage</key>
+                <label>Become Toad Sage</label>
+                <durationDays>0.01</durationDays>
+                <iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath>
+                <pawnKind>NM_Ninshu_Toad</pawnKind>
+				<hediffDef>Prostheses_HediffDef_NM_Ninshu_Toad</hediffDef>
+            </li>
+			
+			<li Class="NarutoMod.PawnKindBiosculptingCycle_Properties">
+                <compClass>NarutoMod.PawnKindBiosculptingCycle</compClass>
+                <key>pawnKindChangeMonkeySage</key>
+                <label>Become Monkey Sage</label>
+                <durationDays>0.01</durationDays>
+                <iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath>
+                <pawnKind>NM_Ninshu_Monkey</pawnKind>
+				<hediffDef>Prostheses_HediffDef_NM_Ninshu_Monkey</hediffDef>
+            </li>
+			
+			<li Class="NarutoMod.PawnKindBiosculptingCycle_Properties">
+                <compClass>NarutoMod.PawnKindBiosculptingCycle</compClass>
+                <key>pawnKindChangeSharkSage</key>
+                <label>Become Shark Sage</label>
+                <durationDays>0.01</durationDays>
+                <iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath>
+                <pawnKind>NM_Ninshu_Shark</pawnKind>
+				<hediffDef>Prostheses_HediffDef_NM_Ninshu_Shark</hediffDef>
+            </li>
+        </comps>
+		
+        <placeWorkers>
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+    </ThingDef>
+
+</Defs>

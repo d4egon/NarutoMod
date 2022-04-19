@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+
+<!--Gedo Statue -->
+
+
+
+ <ThingDef ParentName="BuildingBase">
+    <defName>GS_Gedo_Statue</defName>
+    <label>Gedo Statue</label>
+    <description>Gedo Statue</description>
+    <thingClass>CommunicationCore.Things.Building_CommunicationConsole</thingClass>
+    <graphicData>
+      <texPath>Things/Building/GedoStatue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+
+    </graphicData>
+	<rotatable>false</rotatable>
+	
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <blockWind>true</blockWind>
+    <castEdgeShadows>false</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>2200</WorkToBuild>
+      <Flammability>0.6</Flammability>
+    </statBases>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>300</costStuffCount>
+	
+	
+	
+    <size>(2,2)</size>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+
+<!--    <defaultPlacingRot>north</defaultPlacingRot>-->
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <hasInteractionCell>true</hasInteractionCell>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Misc</designationCategory>
+    <comps>
+				<!--Chao Trader-->
+						
+	  <li Class="CommunicationCore.Things.CompProperties_Communication">
+				<traderKindDef>Gedo_Trader</traderKindDef>
+				<regenerateInterval>2500</regenerateInterval>
+			</li>
+			
+    </comps>
+
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+	
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+
+
+</Defs>

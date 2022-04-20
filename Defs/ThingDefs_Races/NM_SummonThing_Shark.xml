@@ -56,8 +56,7 @@
   </PawnKindDef>
 
 <ThingDef ParentName="AnimalThingBase">
-	<thingClass>AnimalBehaviours.Pawn_SwallowWhole</thingClass>
-    <defName>NM_SummonThing_Shark</defName>
+	<defName>NM_SummonThing_Shark</defName>
     <label>Summoned ninja shark</label>
     <devNote>cat-1</devNote>
     <description>TO-DO!</description>
@@ -67,12 +66,6 @@
       <ComfyTemperatureMin>-50</ComfyTemperatureMin>
     </statBases>
 	<comps>
-		<li Class="AnimalBehaviours.CompProperties_SwallowWhole">	
-		<digestionPeriod>120</digestionPeriod>
-		<playSoundWhenKilled>True</playSoundWhenKilled>
-		<createFilthWhenKilled>True</createFilthWhenKilled>
-		</li>	
-		
 		<li Class="AnimalBehaviours.CompProperties_Draftable">
 			<makeNonFleeingToo>true</makeNonFleeingToo>
 		</li>
@@ -82,23 +75,6 @@
 		</li>
 	</comps>
     <tools>
-	  <li>
-	  <label>swallow whole</label>
-	  <capacities>
-		<li>NM_SwallowWhole</li>
-	  </capacities>
-	  <power>30</power>
-        <cooldownTime>10</cooldownTime>
-        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <surpriseAttack>
-          <extraMeleeDamages>
-            <li>
-              <def>Stun</def>
-              <amount>14</amount>
-            </li>
-          </extraMeleeDamages>
-        </surpriseAttack>
-	  </li>
       <li>
         <label>left claw</label>
         <capacities>

@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
+	
+	<ToolCapacityDef>
+    <defName>NM_SwallowWhole</defName>
+    <label>swallow whole</label>
+	</ToolCapacityDef>
+	
 	<DamageDef>
 		<defName>NM_SwallowWhole</defName>
 		<label>swallow whole</label>
 		<workerClass>AnimalBehaviours.DamageWorker_SwallowWhole</workerClass>
 		<externalViolence>true</externalViolence>
-		<deathMessage>{0} has been bitten to death.</deathMessage>
+		<deathMessage>{0} was swallowed by a huge ninshu sage animal.</deathMessage>
 		<hediff>Stab</hediff>
 		<hediffSolid>Crack</hediffSolid>
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<impactSoundType>Slice</impactSoundType>
 		<armorCategory>Sharp</armorCategory>
 	</DamageDef>
+	
+	<ManeuverDef>
+    <defName>NM_SwallowWhole</defName>
+    <requiredCapacity>NM_SwallowWhole</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttackDamage</verbClass>
+      <meleeDamageDef>NM_SwallowWhole</meleeDamageDef>
+    </verb>
+    <logEntryDef>MeleeAttack</logEntryDef>
+    <combatLogRulesHit>Maneuver_Bite_MeleeHit</combatLogRulesHit>
+    <combatLogRulesDeflect>Maneuver_Bite_MeleeDeflect</combatLogRulesDeflect>
+    <combatLogRulesMiss>Maneuver_Bite_MeleeMiss</combatLogRulesMiss>
+    <combatLogRulesDodge>Maneuver_Bite_MeleeDodge</combatLogRulesDodge>
+  </ManeuverDef>
 	
 	
 </Defs>

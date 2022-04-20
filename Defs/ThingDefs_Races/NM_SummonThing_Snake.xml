@@ -41,6 +41,7 @@
   </PawnKindDef>
 
 <ThingDef ParentName="AnimalThingBase">
+	<thingClass>AnimalBehaviours.Pawn_SwallowWhole</thingClass>
     <defName>NM_SummonThing_Snake</defName>
     <label>Summoned ninja Snake</label>
    <devNote>misc</devNote>
@@ -53,11 +54,17 @@
     </statBases>
     <uiIconScale>1.1</uiIconScale>
 	<comps>
+		<li Class="AnimalBehaviours.CompProperties_SwallowWhole">	
+		<digestionPeriod>120</digestionPeriod>
+		<playSoundWhenKilled>True</playSoundWhenKilled>
+		<createFilthWhenKilled>True</createFilthWhenKilled>
+		</li>	
+		
 		<li Class="AnimalBehaviours.CompProperties_Draftable">
 			<makeNonFleeingToo>true</makeNonFleeingToo>
 		</li>
 		<li Class="CompProperties_Lifespan">
-			<lifespanTicks>20000</lifespanTicks>
+			<lifespanTicks>40000</lifespanTicks>
 			<expireEffect>DamageDiminished_General</expireEffect>
 		</li>
 		
@@ -87,6 +94,25 @@
           </extraMeleeDamages>
         </surpriseAttack>
       </li>
+	  
+	  <li>
+	  <label>swallow whole</label>
+	  <capacities>
+		<li>NM_SwallowWhole</li>
+	  </capacities>
+	  <power>30</power>
+        <cooldownTime>10</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+	  </li>
+	  
       <li>
         <label>head</label>
         <capacities>
@@ -98,7 +124,9 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
       </li>
+	  
     </tools>
+	
     <race>
       <body>Snake</body>
       <predator>true</predator>

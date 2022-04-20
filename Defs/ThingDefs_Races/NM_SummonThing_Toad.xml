@@ -47,6 +47,7 @@
 
 
 <ThingDef ParentName="AnimalThingBase">
+	<thingClass>AnimalBehaviours.Pawn_SwallowWhole</thingClass>
     <defName>NM_SummonThing_Toad</defName>
     <label>Summoned ninja toad</label>
     <devNote>misc</devNote>
@@ -61,11 +62,18 @@
     </statBases>
     <uiIconScale>1.25</uiIconScale>
 	<comps>
+		<li Class="AnimalBehaviours.CompProperties_SwallowWhole">	
+		<digestionPeriod>120</digestionPeriod>
+		<playSoundWhenKilled>True</playSoundWhenKilled>
+		<createFilthWhenKilled>True</createFilthWhenKilled>
+		</li>	
+		
 		<li Class="AnimalBehaviours.CompProperties_Draftable">
 			<makeNonFleeingToo>true</makeNonFleeingToo>
 		</li>
+		
 		<li Class="CompProperties_Lifespan">
-			<lifespanTicks>20000</lifespanTicks>
+			<lifespanTicks>40000</lifespanTicks>
 			<expireEffect>DamageDiminished_General</expireEffect>
 		</li>
 		
@@ -78,12 +86,29 @@
 		</li>
 	</comps>
     <tools>
+		<li>
+	  <label>swallow whole</label>
+	  <capacities>
+		<li>NM_SwallowWhole</li>
+	  </capacities>
+	  <power>30</power>
+        <cooldownTime>10</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+	  </li>
       <li>
         <label>beak</label>
         <capacities>
           <li>Bite</li>
         </capacities>
-        <power>8</power>
+        <power>15</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>TurtleBeakAttackTool</linkedBodyPartsGroup>
       </li>
@@ -92,7 +117,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>3</power>
+        <power>15</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>

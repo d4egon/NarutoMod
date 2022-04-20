@@ -41,9 +41,10 @@
   </PawnKindDef>
 
 <ThingDef ParentName="AnimalThingBase">
+	<thingClass>AnimalBehaviours.Pawn_SwallowWhole</thingClass>
     <defName>NM_SummonThing_SnakePurple</defName>
     <label>Summoned ninja SnakePurple</label>
-   <devNote>misc</devNote>
+	<devNote>misc</devNote>
     <description>A large summoned ninja SnakePurple. Cobras can be highly aggressive if provoked, and their bite injects toxic venom into the victim.</description>
     <statBases>
       <MoveSpeed>3.5</MoveSpeed>
@@ -53,11 +54,17 @@
     </statBases>
     <uiIconScale>1.1</uiIconScale>
 	<comps>
+		<li Class="AnimalBehaviours.CompProperties_SwallowWhole">	
+		<digestionPeriod>120</digestionPeriod>
+		<playSoundWhenKilled>True</playSoundWhenKilled>
+		<createFilthWhenKilled>True</createFilthWhenKilled>
+		</li>	
+		
 		<li Class="AnimalBehaviours.CompProperties_Draftable">
 			<makeNonFleeingToo>true</makeNonFleeingToo>
 		</li>
 		<li Class="CompProperties_Lifespan">
-			<lifespanTicks>20000</lifespanTicks>
+			<lifespanTicks>40000</lifespanTicks>
 			<expireEffect>DamageDiminished_General</expireEffect>
 		</li>
 		
@@ -70,6 +77,23 @@
 		</li>
 	</comps>
 	<tools>
+	<li>
+	  <label>swallow whole</label>
+	  <capacities>
+		<li>NM_SwallowWhole</li>
+	  </capacities>
+	  <power>30</power>
+        <cooldownTime>10</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+	  </li>
       <li>
         <label>venom-fangs</label>
         <capacities>

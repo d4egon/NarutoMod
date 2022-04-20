@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Snake Sage Abilities -->
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Prostheses_HediffDef_NM_Ninshu_Snake</defName>
+		<label>snake sage</label>
+		<description>TODO!</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_NM_Ninshu_Snake</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<displayWound>false</displayWound>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_SummonThing_SnakeSmall</verbClass>
+						<label>Summoning Jutsu: SnakeSmall</label>
+						<description>TODO!</description>
+						<soundCast>NM_SummoningPoof</soundCast>
+						<commandIcon>GUI/SummonSnake</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<powerCost>100</powerCost>
+						<pawnKindToSpawn>NM_SummonPawnKind_SnakeSmall</pawnKindToSpawn>
+					</li>
+					
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_SummonThing_SnakePurple</verbClass>
+						<label>Summoning Jutsu: SnakePurple</label>
+						<description>TODO!</description>
+						<soundCast>NM_SummoningPoof</soundCast>
+						<commandIcon>GUI/SummonSnake</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<powerCost>100</powerCost>
+						<pawnKindToSpawn>NM_SummonPawnKind_SnakePurple</pawnKindToSpawn>
+					</li>
+					
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_SummonThing_Snake</verbClass>
+						<label>Summoning Jutsu: Snake</label>
+						<description>TODO!</description>
+						<soundCast>NM_SummoningPoof</soundCast>
+						<commandIcon>GUI/SummonSnake</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<powerCost>100</powerCost>
+						<pawnKindToSpawn>NM_SummonPawnKind_Snake</pawnKindToSpawn>
+					</li>
+					
+				</verbProps>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_NM_Ninshu_Snake</defName>
+		<label>Snake Sage</label>
+		<description>TODO!</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_DivineCell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>Prostheses_RecipeInstall_NM_Ninshu_Snake</defName>
+		<label>snake sage</label>
+		<description>snake sage</description>
+		<jobString>Converting to snake sage</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_NM_Ninshu_Snake</li>
+					</thingDefs> 
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_NM_Ninshu_Snake</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>Prostheses_HediffDef_NM_Ninshu_Snake</addsHediff>
+	</RecipeDef>
+	
+</Defs>

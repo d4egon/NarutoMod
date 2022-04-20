@@ -2,14 +2,14 @@
 <Defs>
 
 <PawnKindDef ParentName="AnimalKindBase">
-    <defName>NM_SummonPawnKind_Snake</defName>
-	<race>NM_SummonThing_Snake</race>
+    <defName>NM_SummonPawnKind_SnakePurple</defName>
+	<race>NM_SummonThing_SnakePurple</race>
 	<combatPower>65</combatPower>
     <ecoSystemWeight>0.25</ecoSystemWeight>
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Animal/Snake/Shiro</texPath>
+          <texPath>Things/Animal/Snake/Purple</texPath>
           <drawSize>2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -19,7 +19,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Animal/Snake/Shiro</texPath>
+          <texPath>Things/Animal/Snake/Purple</texPath>
           <drawSize>3</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -29,7 +29,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Animal/Snake/Shiro</texPath>
+          <texPath>Things/Animal/Snake/Purple</texPath>
           <drawSize>4</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -41,10 +41,10 @@
   </PawnKindDef>
 
 <ThingDef ParentName="AnimalThingBase">
-    <defName>NM_SummonThing_Snake</defName>
-    <label>Summoned ninja Snake</label>
+    <defName>NM_SummonThing_SnakePurple</defName>
+    <label>Summoned ninja SnakePurple</label>
    <devNote>misc</devNote>
-    <description>A large summoned ninja snake. Cobras can be highly aggressive if provoked, and their bite injects toxic venom into the victim.</description>
+    <description>A large summoned ninja SnakePurple. Cobras can be highly aggressive if provoked, and their bite injects toxic venom into the victim.</description>
     <statBases>
       <MoveSpeed>3.5</MoveSpeed>
       <MarketValue>150</MarketValue>

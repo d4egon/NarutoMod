@@ -7,11 +7,11 @@ namespace NarutoMod.DefOfs
     public static class NM_PawnKindDefOf
     {
         //Summoning Jutsu
-        public static PawnKindDef NM_SummonPawnKind_Dog;
         public static PawnKindDef NM_SummonPawnKind_Snake;
+        public static PawnKindDef NM_SummonPawnKind_SnakeSmall;
+        public static PawnKindDef NM_SummonPawnKind_SnakePurple;
         public static PawnKindDef NM_SummonPawnKind_Toad;
         public static PawnKindDef NM_SummonPawnKind_Monkey;
-        public static PawnKindDef NM_SummonPawnKind_Hawk;
         public static PawnKindDef NM_SummonPawnKind_Shark;
         public static PawnKindDef NM_SummonPawnKind_ShadowClone;
         public static PawnKindDef NM_SummonPawnKind_WoodClone;

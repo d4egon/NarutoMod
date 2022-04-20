@@ -9,6 +9,7 @@ namespace NarutoMod.DefOfs
         
         public static SoundDef NM_DeepForestCreak;
         public static SoundDef NM_WoodRelease;
+        public static SoundDef NM_SummoningPoof;
 
     }
 }

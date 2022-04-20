@@ -2,13 +2,13 @@
 <Defs>
 
 <PawnKindDef ParentName="AnimalKindBase">
-    <defName>NM_SummonPawnKind_Hawk</defName>
-	<race>NM_SummonThing_Hawk</race>
+    <defName>NM_SummonPawnKind_ShadowClone</defName>
+	<race>NM_SummonThing_ShadowClone</race>
 	<combatPower>200</combatPower>
 	<lifeStages>
       <li>
-        <label>ninja hawk baby</label>
-        <labelPlural>ninja hawk babies</labelPlural>
+        <label>ShadowClone</label>
+        <labelPlural>ShadowClones</labelPlural>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/Husky/Husky</texPath>
           <drawSize>1.0</drawSize>
@@ -56,10 +56,10 @@
   </PawnKindDef>
 
 <ThingDef ParentName="AnimalThingBase">
-    <defName>NM_SummonThing_Hawk</defName>
-    <label>summoned ninja hawk</label>
+    <defName>NM_SummonThing_ShadowClone</defName>
+    <label>Summoned ShadowClone</label>
     <devNote>cat-1</devNote>
-    <description>A large, energetic dog with ninja-training and a thick fur coat for remaining comfortable in arctic environments.</description>
+    <description>A ShadowClone</description>
     <statBases>
       <MoveSpeed>7.0</MoveSpeed>
       <MarketValue>250</MarketValue>

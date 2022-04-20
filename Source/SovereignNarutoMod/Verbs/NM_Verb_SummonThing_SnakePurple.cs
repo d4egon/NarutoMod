@@ -3,9 +3,9 @@ using Verse;
 
 namespace NarutoMod.Verbs
 {
-    class NM_Verb_SummonThing_Toad : NM_Verb_AbilityHediff
+    class NM_Verb_SummonThing_SnakePurple : NM_Verb_AbilityHediff
     {
-        public PawnKindDef pawnKindToSpawn = DefOfs.NM_PawnKindDefOf.NM_SummonPawnKind_Toad;
+        public PawnKindDef pawnKindToSpawn = DefOfs.NM_PawnKindDefOf.NM_SummonPawnKind_SnakePurple;
 
         public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true) => target != null && target.Pawn != null && base.ValidateTarget(target, showMessages);
 

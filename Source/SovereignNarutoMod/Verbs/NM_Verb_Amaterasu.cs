@@ -16,9 +16,13 @@ namespace NarutoMod.Verbs
         }
 
         public override void WarmupComplete()
-        {
-            NM_BlackFireUtility.TryAttachFire(base.currentTarget.Pawn, 1f);
+        {   
             base.WarmupComplete();
+
+            //AddEffecterToMaintain(DefOfs.NM_EffecterDefOf.NM_SharinganRotating.Spawn(CasterPawn.Position, CasterPawn.Map, 1f), currentTarget.Cell, 120, CasterPawn);
+
+            FireUtility.TryAttachFire(base.currentTarget.Pawn, 1f);
+            
             CasterPawn.stances.stunner.StunFor(60, CasterPawn, false, false);
         }
     }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<FleckDef ParentName="FleckBase">
+	<defName>NM_SharinganRotating</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+	<fadeInTime>0.08</fadeInTime>
+	<solidTime>0.5</solidTime>
+    <fadeOutTime>1.5</fadeOutTime>
+    <graphicData>
+	  <texPath>Things/Mote/NM_SharinganRotating</texPath>
+      <drawSize>1</drawSize>
+    </graphicData>
+  </FleckDef>
+
+
+</Defs>

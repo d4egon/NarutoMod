@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Shark Sage Abilities -->
+
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Prostheses_HediffDef_NM_Ninshu_Shark</defName>
+		<label>Shark sage</label>
+		<description>TODO!</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_NM_Ninshu_Shark</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<displayWound>false</displayWound>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_SummonThing_Shark</verbClass>
+						<label>Summoning Jutsu: Shark</label>
+						<description>TODO!</description>
+						<soundCast>NM_SummoningPoof</soundCast>
+						<commandIcon>GUI/SummonShark</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<powerCost>100</powerCost>
+						<pawnKindToSpawn>NM_SummonPawnKind_Shark</pawnKindToSpawn>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_NM_Ninshu_Shark</defName>
+		<label>Shark sage</label>
+		<description>TODO!</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_DivineCell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>Prostheses_RecipeInstall_NM_Ninshu_Shark</defName>
+		<label>Shark sage</label>
+		<description>Shark sage</description>
+		<jobString>Converting to Shark sage</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_NM_Ninshu_Shark</li>
+					</thingDefs> 
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_NM_Ninshu_Shark</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>Prostheses_HediffDef_NM_Ninshu_Shark</addsHediff>
+	</RecipeDef>
+
+</Defs>

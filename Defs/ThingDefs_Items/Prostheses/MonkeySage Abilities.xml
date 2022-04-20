@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- Monkey Sage Abilities -->
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>Prostheses_HediffDef_NM_Ninshu_Monkey</defName>
+		<label>monkey sage</label>
+		<description>TODO!</description>
+		<spawnThingOnRemoved>Prostheses_ThingDef_NM_Ninshu_Monkey</spawnThingOnRemoved>
+		<priceImpact>true</priceImpact>
+		<countsAsAddedPartOrImplant>true</countsAsAddedPartOrImplant>
+		<addedPartProps>
+			<solid>true</solid>
+		</addedPartProps>
+		<displayWound>true</displayWound>
+		<comps>
+			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
+				<verbProps>
+					
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_WoodRelease_DomedWall</verbClass>
+						<label>Wood Style: Domed Wall</label>
+						<description>TODO!</description>
+						<commandIcon>GUI/DomedWall</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<soundCast>NM_WoodRelease</soundCast>
+						<powerCost>30</powerCost>
+						<pattern>
+							<li>(0, 0)</li>
+							<li>(1, 0)</li>
+							<li>(-1, 0)</li>
+							<li>(0, 1)</li>
+							<li>(0, -1)</li>
+						</pattern>
+					</li>
+					
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_WoodRelease_DeepForest</verbClass>
+						<label>Wood Style: Deep Forest Emerge</label>
+						<description>TODO!</description>
+						<commandIcon>GUI/DeepForest</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>true</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>30.0</range>
+						<warmupTime>0.5</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<soundCast>NM_WoodRelease</soundCast>
+						<powerCost>30</powerCost>
+						<pattern>
+																			<li>(5, -1)</li><li>(5, -2)</li><li>(5, 0)</li><li>(5, 1)</li><li>(5, 2)</li>
+															<li>(4, -1)</li><li>(4, -2)</li><li>(4, -3)</li><li>(4, 0)</li><li>(4, 1)</li><li>(4, 2)</li><li>(4, 3)</li>
+											<li>(3, -1)</li><li>(3, -2)</li><li>(3, -3)</li><li>(3, -4)</li><li>(3, 0)</li><li>(3, 1)</li><li>(3, 2)</li><li>(3, 3)</li><li>(3, 4)</li>
+							<li>(2, -1)</li><li>(2, -2)</li><li>(2, -3)</li><li>(2, -4)</li><li>(2, -5)</li><li>(2, 0)</li><li>(2, 1)</li><li>(2, 2)</li><li>(2, 3)</li><li>(2, 4)</li><li>(2, 5)</li>
+							<li>(1, -1)</li><li>(1, -2)</li><li>(1, -3)</li><li>(1, -4)</li><li>(1, -5)</li><li>(1, 0)</li><li>(1, 1)</li><li>(1, 2)</li><li>(1, 3)</li><li>(1, 4)</li><li>(1, 5)</li>
+							<li>(0, -5)</li><li>(0, -4)</li><li>(0, -3)</li><li>(0, -2)</li><li>(0, -1)</li><li>(0, 0)</li><li>(0, 1)</li><li>(0, 2)</li><li>(0, 3)</li><li>(0, 4)</li><li>(0, 5)</li>
+							<li>(-1, -1)</li><li>(-1, -2)</li><li>(-1, -3)</li><li>(-1, -4)</li><li>(-1, -5)</li><li>(-1, 0)</li><li>(-1, 1)</li><li>(-1, 2)</li><li>(-1, 3)</li><li>(-1, 4)</li><li>(-1, 5)</li>
+							<li>(-2, -1)</li><li>(-2, -2)</li><li>(-2, -3)</li><li>(-2, -4)</li><li>(-2, -5)</li><li>(-2, 0)</li><li>(-2, 1)</li><li>(-2, 2)</li><li>(-2, 3)</li><li>(-2, 4)</li><li>(-2, 5)</li>
+											<li>(-3, -1)</li><li>(-3, -2)</li><li>(-3, -3)</li><li>(-3, -4)</li><li>(-3, 0)</li><li>(-3, 1)</li><li>(-3, 2)</li><li>(-3, 3)</li><li>(-3, 4)</li>
+															<li>(-4, -1)</li><li>(-4, -2)</li><li>(-4, -3)</li><li>(-4, 0)</li><li>(-4, 1)</li><li>(-4, 2)</li><li>(-4, 3)</li>
+																			<li>(-5, -1)</li><li>(-5, -2)</li><li>(-5, 0)</li><li>(-5, 1)</li><li>(-5, 2)</li>
+
+						</pattern>
+					</li>
+					
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_SummonThing_WoodClone</verbClass>
+						<label>Summoning Jutsu: WoodClone</label>
+						<description>TODO!</description>
+						<soundCast>NM_SummoningPoof</soundCast>
+						<commandIcon>GUI/SummonWoodClone</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<powerCost>100</powerCost>
+						<pawnKindToSpawn>NM_SummonPawnKind_WoodClone</pawnKindToSpawn>
+					</li>
+					
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_SummonThing_Monkey</verbClass>
+						<label>Summoning Jutsu: Monkey</label>
+						<description>TODO!</description>
+						<soundCast>NM_SummoningPoof</soundCast>
+						<commandIcon>GUI/SummonMonkey</commandIcon>
+						<hasStandardCommand>true</hasStandardCommand>
+						<targetable>false</targetable>
+						<onlyManualCast>true</onlyManualCast>
+						<range>0.0</range>
+						<warmupTime>0</warmupTime>
+						<targetParams>
+							<canTargetBuildings>false</canTargetBuildings>
+							<canTargetLocations>false</canTargetLocations>
+						</targetParams>
+						<powerCost>100</powerCost>
+						<pawnKindToSpawn>NM_SummonPawnKind_Monkey</pawnKindToSpawn>
+					</li>
+					
+				</verbProps>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
+		<defName>Prostheses_ThingDef_NM_Ninshu_Monkey</defName>
+		<label>Divine cell</label>
+		<description>TODO!</description>
+		<graphicData>
+			<texPath>Things/Items/Implant_DivineCell</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.80</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<Mass>0.150</Mass>
+			<MarketValue>2800</MarketValue>
+		</statBases>
+	</ThingDef>
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>Prostheses_RecipeInstall_NM_Ninshu_Monkey</defName>
+		<label>Install monkey sage mode</label>
+		<description>Install monkey sage mode</description>
+		<jobString>Installing monkey sage mode</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prostheses_ThingDef_NM_Ninshu_Monkey</li>
+					</thingDefs> 
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Prostheses_ThingDef_NM_Ninshu_Monkey</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<addsHediff>Prostheses_HediffDef_NM_Ninshu_Monkey</addsHediff>
+	</RecipeDef>
+</Defs>

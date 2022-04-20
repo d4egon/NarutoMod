@@ -56,6 +56,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DefOfs\NM_EffecterDefOf.cs" />
     <Compile Include="DefOfs\NM_PawnKindDefOf.cs" />
     <Compile Include="DefOfs\NM_SoundDefOf.cs" />
     <Compile Include="PawnKindBiosculptingCycle.cs" />
@@ -63,11 +64,11 @@
     <Compile Include="Verbs\NM_Verb_SummonThing_WoodClone.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_ShadowClone.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_Shark.cs" />
-    <Compile Include="Verbs\NM_Verb_SummonThing_Hawk.cs" />
+    <Compile Include="Verbs\NM_Verb_SummonThing_SnakeSmall.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_Monkey.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_Toad.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_Snake.cs" />
-    <Compile Include="Verbs\NM_Verb_SummonThing_Dog.cs" />
+    <Compile Include="Verbs\NM_Verb_SummonThing_SnakePurple.cs" />
     <Compile Include="Verbs\NM_Verb_WoodRelease_DeepForest.cs" />
     <Compile Include="NM_BlackSpark.cs" />
     <Compile Include="NM_BlackFire.cs" />
@@ -98,7 +99,7 @@
     <Compile Include="Gizmos\NM_Command_HediffAbility.cs" />
     <Compile Include="Gizmos\NM_Gizmo_Power.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="WorkGiver_MeditationSpot_Ninshu - Copy.cs" />
+    <Compile Include="WorkGiver_MeditationSpot_Ninshu.cs" />
     <Compile Include="WorkGiver_MeditationSpot_Sage.cs" />
   </ItemGroup>
   <ItemGroup>

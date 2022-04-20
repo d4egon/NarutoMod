@@ -10,9 +10,9 @@
         <label>ninja shark baby</label>
         <labelPlural>ninja shark babies</labelPlural>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Husky/Husky</texPath>
+          <texPath>Things/Animal/Shark/Shark</texPath>
           <drawSize>1.0</drawSize>
-          <color>(137,133,133)</color>
+          <color>(255,255,255)</color>
           <shaderType>CutoutComplex</shaderType>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -22,9 +22,9 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Husky/Husky</texPath>
+          <texPath>Things/Animal/Shark/Shark</texPath>
           <drawSize>1.5</drawSize>
-          <color>(137,133,133)</color>
+          <color>(255,255,255)</color>
           <shaderType>CutoutComplex</shaderType>
           <shadowData>
             <volume>(0.25, 0.3, 0.25)</volume>
@@ -38,9 +38,9 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Husky/Husky</texPath>
+          <texPath>Things/Animal/Shark/Shark</texPath>
           <drawSize>1.75</drawSize>
-          <color>(137,133,133)</color>
+          <color>(255,255,255)</color>
           <shaderType>CutoutComplex</shaderType>
           <shadowData>
             <volume>(0.3, 0.4, 0.3)</volume>

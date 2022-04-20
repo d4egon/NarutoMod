@@ -10,8 +10,8 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
-          <drawSize>0.9</drawSize>
+          <texPath>Things/Animal/Toad/Toad</texPath>
+          <drawSize>2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
@@ -20,8 +20,8 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
-          <drawSize>1.2</drawSize>
+          <texPath>Things/Animal/Toad/Toad</texPath>
+          <drawSize>3</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Tortoise/Dessicated_Tortoise</texPath>
@@ -30,8 +30,8 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Tortoise/Tortoise</texPath>
-          <drawSize>2.5</drawSize>
+          <texPath>Things/Animal/Toad/Toad</texPath>
+          <drawSize>4</drawSize>
           <shadowData>
             <volume>(0.45, 0.45, 0.45)</volume>
             <offset>(0,0,0)</offset>

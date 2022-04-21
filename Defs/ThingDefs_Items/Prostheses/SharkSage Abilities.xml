@@ -32,8 +32,27 @@
 							<canTargetBuildings>false</canTargetBuildings>
 							<canTargetLocations>false</canTargetLocations>
 						</targetParams>
-						<powerCost>100</powerCost>
+						
 						<pawnKindToSpawn>NM_SummonPawnKind_Shark</pawnKindToSpawn>
+					</li>
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_Shoot</verbClass>
+						<label>Water Style: Shark Bullet</label>
+						<description>TODO!</description>
+						<soundCast>PsycastPsychicPulse</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>20</muzzleFlashScale>
+						<hasStandardCommand>true</hasStandardCommand>
+						<commandIcon>GUI/SummonShark</commandIcon>
+						<defaultProjectile>NM_SharkBullet</defaultProjectile>
+						<onlyManualCast>true</onlyManualCast>
+						<warmupTime>3.5</warmupTime>
+						<range>25</range>
+						<targetParams>
+							<canTargetLocations>true</canTargetLocations>
+							<canTargetBuildings>true</canTargetBuildings>
+						</targetParams>
+						<powerCost>100</powerCost>
 					</li>
 				</verbProps>
 			</li>

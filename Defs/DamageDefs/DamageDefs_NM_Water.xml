@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<DamageDef Name="NM_DMG_Water">
+    <defName>NM_DMG_Water</defName>
+    <label>water</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion of water.</deathMessage>
+    <hediff>Shredded</hediff>
+    <hediffSolid>Crack</hediffSolid>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>3</minDamageToFragment>
+    <defaultDamage>25</defaultDamage>
+    <defaultStoppingPower>0.3</defaultStoppingPower>
+    <defaultArmorPenetration>0.30</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+    <plantDamageFactor>6</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>WaterSplash</explosionCellFleck>
+    <explosionColorCenter>(0.2, 0.4, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.3, 0.5, 0.7)</explosionColorEdge>
+    <soundExplosion>Bridge_CollapseWater</soundExplosion>
+    <combatLogRules>Damage_NM_Water</combatLogRules>
+  </DamageDef>
+  
+  
+  <RulePackDef>
+    <defName>Damage_NM_Water</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>damaged_past(p=2)->splashed</li>
+        <li>damaged_past(p=2)->bashed</li>
+        <li>damaged_past->watered</li>
+        <li>damaged_past->punctured</li>
+        <li>damaged_past->sliced</li>
+        <li>damaged_past->cut</li>
+        
+        <li>destroyed_past->drowned</li>
+        <li>destroyed_past->washed away</li>
+        <li>destroyed_past->crushed</li>
+        <li>destroyed_past->ripped</li>
+        <li>destroyed_past->flooded</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

@@ -26,5 +26,8 @@ namespace NarutoMod
         public static ThingDef NM_SummonThing_ShadowClone;
         public static ThingDef NM_SummonThing_WoodClone;
 
+
+        public static ThingDef NM_SharkBullet;
+        public static ThingDef NM_Projectile_Tester;
     }
 }

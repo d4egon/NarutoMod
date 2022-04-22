@@ -45,7 +45,7 @@
 						<clipFolderPath>PrupleProshesisSound</clipFolderPath>
 					</li>
 				</grains>
-				<volumeRange>30~30</volumeRange>
+				<volumeRange>10~20</volumeRange>
 				<pitchRange>0.8529412~1.321177</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -59,10 +59,11 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>NM_WoodRelease</clipFolderPath>
+						<clipFolderPath>WoodRelease</clipFolderPath>
 					</li>
 					</grains>      
-				<volumeRange>30~30</volumeRange>           
+				<volumeRange>10~20</volumeRange>
+				<pitchRange>0.8529412~1.321177</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -75,10 +76,11 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Folder">
-						<clipFolderPath>NM_DeepForestCreak</clipFolderPath>
+						<clipFolderPath>DeepForestCreak</clipFolderPath>
 					</li>
 					</grains>      
-				<volumeRange>30~30</volumeRange>           
+				<volumeRange>10~20</volumeRange>
+				<pitchRange>0.8529412~1.321177</pitchRange>				
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -94,11 +96,163 @@
 						<clipFolderPath>SummoningPoof</clipFolderPath>
 					</li>
 					</grains>      
-				<volumeRange>30~30</volumeRange>           
+				<volumeRange>10~20</volumeRange> 
+				<pitchRange>0.8529412~1.321177</pitchRange>				
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>NM_WaterSplash</defName>  
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>watersplash</clipFolderPath>
+					</li>
+					</grains>      
+				<volumeRange>10~20</volumeRange> 
+				<pitchRange>0.8529412~1.321177</pitchRange>				
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
 	</SoundDef>
 
+	<SoundDef>
+		<defName>NM_WaterCast</defName>  
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>waterstorrent</clipFolderPath>
+					</li>
+					</grains>      
+				<volumeRange>10~20</volumeRange> 
+				<pitchRange>0.8529412~1.321177</pitchRange>				
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 
+	<SoundDef>
+		<defName>NM_FireballLaunch</defName>  
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>fireball_launch</clipFolderPath>
+					</li>
+					</grains>      
+				<volumeRange>10~20</volumeRange> 
+				<pitchRange>0.8529412~1.321177</pitchRange>				
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>NM_FireballHit_Small</defName>  
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>fireball_hit_small</clipFolderPath>
+					</li>
+					</grains>      
+				<volumeRange>10~20</volumeRange> 
+				<pitchRange>0.8529412~1.321177</pitchRange>				
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>NM_FireballHit_Large</defName>  
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>fireball_hit_large</clipFolderPath>
+					</li>
+					</grains>      
+				<volumeRange>10~20</volumeRange> 
+				<pitchRange>0.8529412~1.321177</pitchRange>				
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>NM_Chidori</defName>  
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>chidori</clipFolderPath>
+					</li>
+					</grains>      
+				<volumeRange>10~20</volumeRange> 
+				<pitchRange>0.8529412~1.321177</pitchRange>				
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>NM_FastBladeManyHits</defName>  
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>fastblade</clipFolderPath>
+					</li>
+					</grains>      
+				<volumeRange>10~20</volumeRange> 
+				<pitchRange>0.8529412~1.321177</pitchRange>				
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>NM_FastBlade_Thrown</defName>  
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>blade_thrown_fast</clipFolderPath>
+					</li>
+					</grains>      
+				<volumeRange>10~20</volumeRange> 
+				<pitchRange>0.8529412~1.321177</pitchRange>				
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>NM_KunaiHit</defName>  
+		<context>MapOnly</context>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kunai_hit</clipFolderPath>
+					</li>
+					</grains>      
+				<volumeRange>10~20</volumeRange> 
+				<pitchRange>0.8529412~1.321177</pitchRange>				
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 </Defs>

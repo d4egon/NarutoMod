@@ -64,8 +64,6 @@
 	<comps>
 		<li Class="AnimalBehaviours.CompProperties_SwallowWhole">	
 		<digestionPeriod>120</digestionPeriod>
-		<playSoundWhenKilled>True</playSoundWhenKilled>
-		<createFilthWhenKilled>True</createFilthWhenKilled>
 		<maximumBodysize>300</maximumBodysize>
 		</li>	
 		

@@ -59,6 +59,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Effects\NM_Projectile_OilTrail.cs" />
     <Compile Include="Effects\NM_Projectile_WaterTrail.cs" />
     <Compile Include="DefOfs\NM_DamageDefOf.cs" />
     <Compile Include="DefOfs\NM_ToolCapacityDefOf.cs" />
@@ -67,7 +68,7 @@
     <Compile Include="DefOfs\NM_SoundDefOf.cs" />
     <Compile Include="PawnKindBiosculptingCycle.cs" />
     <Compile Include="PawnKindBiosculptingCycle_Properties.cs" />
-	<Compile Include="Verbs\NM_Verb_Shoot.cs" />
+    <Compile Include="Verbs\NM_Verb_Shoot.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_WoodClone.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_ShadowClone.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_Shark.cs" />

@@ -76,4 +76,74 @@
 			</li>
 		</stages>
 	</HediffDef>
+
+<HediffDef>
+    <defName>NM_Hediff_Oiled</defName>
+    <label>toad oil</label>
+    <labelNoun>toad oil</labelNoun>
+    <description>Toad oil in the eyes and everywhere. It impairs vision, movement and manipulation. Oiled targets explode on death.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <battleStateLabel>blind</battleStateLabel>
+	<maxSeverity>1</maxSeverity>
+    <stages>
+        <li>
+			<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+        </li>
+	    <li>
+			<minSeverity>0.01</minSeverity>
+			<label>moistened</label>
+			<capMods>
+				<li>
+					<capacity>Moving</capacity>
+					<offset>-0.15</offset>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>-0.15</offset>
+				</li>
+			</capMods>
+		</li>
+		<li>
+			<minSeverity>0.40</minSeverity>
+			<label>soggy</label>
+			<capMods>
+				<li>
+					<capacity>Moving</capacity>
+					<offset>-0.30</offset>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>-0.30</offset>
+				</li>
+			</capMods>
+		</li>
+		<li>
+			<minSeverity>0.80</minSeverity>
+			<label>drenched</label>
+			<capMods>
+				<li>
+					<capacity>Moving</capacity>
+					<offset>-0.45</offset>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>-0.45</offset>
+				</li>
+			</capMods>
+		</li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SelfHeal">
+        <healAmount>0.01</healAmount>
+      </li>
+	  <li Class="HediffCompProperties_ExplodeOnDeath">
+		<destroyGear>true</destroyGear>
+		<destroyBody>true</destroyBody>
+		<explosionRadius>5</explosionRadius>
+		<damageDef>NM_DMG_Oil</damageDef>
+		<damageAmount>50</damageAmount>
+	  </li>
+    </comps>
+  </HediffDef>
+
 </Defs>

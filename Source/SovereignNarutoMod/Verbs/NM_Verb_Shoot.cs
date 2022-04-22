@@ -22,7 +22,6 @@ namespace NarutoMod.Verbs
 				return this.verbProps.defaultProjectile;
 			}
 		}
-
 		public override void WarmupComplete()
 		{
 			base.WarmupComplete();

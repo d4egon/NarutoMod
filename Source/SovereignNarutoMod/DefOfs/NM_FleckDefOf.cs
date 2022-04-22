@@ -8,5 +8,7 @@ namespace NarutoMod.DefOfs
     {
         public static FleckDef NM_BlackMicroSparks;
         public static FleckDef NM_BlackFireGlow;
+
+        public static FleckDef NM_PsycastSkipInner_Oil;
     }
 }

@@ -28,6 +28,7 @@ namespace NarutoMod
 
 
         public static ThingDef NM_SharkBullet;
+        public static ThingDef NM_ToadOilBullets;
         public static ThingDef NM_Projectile_Tester;
     }
 }

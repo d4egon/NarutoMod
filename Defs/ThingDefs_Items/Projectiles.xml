@@ -12,11 +12,6 @@
     <graphicData>
       <shaderType>Transparent</shaderType>
     </graphicData>
-    <projectile>
-      <speed>15</speed>
-      <arcHeightFactor>1</arcHeightFactor>
-      <shadowSize>0.7</shadowSize>
-    </projectile>
   </ThingDef>
   
 <ThingDef ParentName="BaseChakraProjectile">
@@ -28,14 +23,36 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile>
-      <explosionRadius>2.0</explosionRadius >
+      <explosionRadius>1.5</explosionRadius >
       <damageDef>NM_DMG_Water</damageDef>
       <!-- Use default damage from explosion def -->
       <explosionDelay>5</explosionDelay>
+      <speed>20</speed>
+      <arcHeightFactor>2</arcHeightFactor>
+      <shadowSize>1.7</shadowSize>
     </projectile>
   </ThingDef>
   
-  
+  <ThingDef ParentName="BaseChakraProjectile">
+	<defName>NM_ToadOilBullets</defName>
+    <thingClass>NarutoMod.Effects.NM_Projectile_OilTrail</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/NM_ToadOilBullet</texPath>
+	  <drawSize>0.3</drawSize>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <explosionRadius>1.5</explosionRadius >
+	  <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+      <preExplosionSpawnChance>0.95</preExplosionSpawnChance>
+      <damageDef>NM_DMG_Oil</damageDef>
+      <!-- Use default damage from explosion def -->
+      <explosionDelay>1</explosionDelay>
+      <speed>100</speed>
+      <arcHeightFactor>0.3</arcHeightFactor>
+      <shadowSize>2</shadowSize>
+	</projectile>
+  </ThingDef>
   
   
   
@@ -55,7 +72,7 @@
     <statBases>
       <WorkToMake>20000</WorkToMake>
       <Mass>3.4</Mass>
-      <RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <costList>
       <Steel>75</Steel>
@@ -70,11 +87,12 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>NM_SharkBullet</defaultProjectile>
-        <warmupTime>3.5</warmupTime>
+        <defaultProjectile>NM_ToadOilBullets</defaultProjectile>
+        <warmupTime>1</warmupTime>
         <range>23.9</range>
-        <forcedMissRadius>1.9</forcedMissRadius>
-        <burstShotCount>1</burstShotCount>
+        <forcedMissRadius>1.7</forcedMissRadius>
+        <burstShotCount>7</burstShotCount>
+		<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>Shot_IncendiaryLauncher</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>14</muzzleFlashScale>
@@ -103,26 +121,5 @@
       </li>
     </tools>
   </ThingDef>
-  <ThingDef ParentName="BaseBullet">
-    <defName>Bullet_IncendiaryLauncher</defName>
-    <label>incendiary bolt</label>
-    <graphicData>
-      <texPath>Things/Projectile/LauncherShot</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>TransparentPostLight</shaderType>
-      <color>(254,189,58)</color>
-    </graphicData>
-    <thingClass>Projectile_Explosive</thingClass>
-    <projectile>
-      <speed>40</speed>
-      <damageDef>Flame</damageDef>
-      <!-- Use default damage from explosion def -->
-      <explosionRadius>1.1</explosionRadius>
-      <preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
-      <preExplosionSpawnChance>0.6</preExplosionSpawnChance>
-      <ai_IsIncendiary>true</ai_IsIncendiary>
-      <arcHeightFactor>0.2</arcHeightFactor>
-      <shadowSize>0.6</shadowSize>
-    </projectile>
-  </ThingDef>
+  
 </Defs>

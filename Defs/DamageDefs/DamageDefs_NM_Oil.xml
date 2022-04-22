@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<DamageDef Name="NM_DMG_Oil">
+    <defName>NM_DMG_Oil</defName>
+    <label>toad oil</label>
+    <workerClass>DamageWorker_AddGlobal</workerClass>
+    <externalViolence>true</externalViolence>
+    <isExplosive>true</isExplosive>
+    <deathMessage>{0} has died in an explosion of oil.</deathMessage>
+    <hediff>NM_Hediff_Oiled</hediff>
+    <impactSoundType>Blunt</impactSoundType>
+    <armorCategory>Sharp</armorCategory>
+    <minDamageToFragment>3</minDamageToFragment>
+    <defaultDamage>3</defaultDamage>
+    <defaultStoppingPower>0.3</defaultStoppingPower>
+    <defaultArmorPenetration>0.30</defaultArmorPenetration>
+    <buildingDamageFactorImpassable>0.5</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>0.5</buildingDamageFactorPassable>
+    <plantDamageFactor>0.5</plantDamageFactor>
+    <explosionAffectOutsidePartsOnly>true</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>1</explosionHeatEnergyPerCell>
+    <explosionCellFleck>NM_PsycastSkipInner_Oil</explosionCellFleck>
+    <explosionColorCenter>(0.2, 0.4, 1)</explosionColorCenter>
+    <explosionColorEdge>(0.3, 0.5, 0.7)</explosionColorEdge>
+    <soundExplosion>Hive_Spawn</soundExplosion>
+    <combatLogRules>Damage_NM_Oil</combatLogRules>
+  </DamageDef>
+  
+   <RulePackDef>
+    <defName>Damage_NM_Oil</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>damaged_past(p=2)->splashed</li>
+        <li>damaged_past(p=2)->toad oiled</li>
+        <li>damaged_past->greased</li>
+        
+        <li>destroyed_past->drowned</li>
+        <li>destroyed_past->slipperified</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+</Defs>

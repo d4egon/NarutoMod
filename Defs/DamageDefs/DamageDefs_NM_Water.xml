@@ -22,7 +22,7 @@
     <plantDamageFactor>6</plantDamageFactor>
     <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
     <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
-    <explosionCellFleck>WaterSplash</explosionCellFleck>
+    <explosionCellFleck>NM_PsycastSkipInner_Water</explosionCellFleck>
     <explosionColorCenter>(0.2, 0.4, 1)</explosionColorCenter>
     <explosionColorEdge>(0.3, 0.5, 0.7)</explosionColorEdge>
     <soundExplosion>Bridge_CollapseWater</soundExplosion>

@@ -29,4 +29,40 @@
     </mote>
   </ThingDef>
   
+  <ThingDef ParentName="NM_MoteBase">
+    <defName>NM_Mote_WatertrailSoft</defName>
+    <graphicData>
+      <texPath>Things/Mote/Mote_WaterBubbles2</texPath>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>1.2</fadeOutTime>
+      <growthRate>1.2</growthRate>
+    </mote>
+  </ThingDef>
+  
+  
+  <ThingDef ParentName="NM_MoteBase">
+    <defName>NM_Mote_Oiltrail</defName>
+    <graphicData>
+      <texPath>Things/Mote/Mote_ToadOil</texPath>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>1.2</fadeOutTime>
+      <growthRate>1.2</growthRate>
+    </mote>
+  </ThingDef>
+  
+  <ThingDef ParentName="NM_MoteBase">
+    <defName>NM_Mote_OiltrailSoft</defName>
+    <graphicData>
+      <texPath>Things/Mote/Mote_ToadOilSoft</texPath>
+    </graphicData>
+    <mote>
+      <fadeInTime>0.05</fadeInTime>
+      <fadeOutTime>1.2</fadeOutTime>
+      <growthRate>1.2</growthRate>
+    </mote>
+  </ThingDef>
 </Defs>

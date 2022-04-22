@@ -9,15 +9,12 @@
 	
 	<NarutoMod.GUI.CasterIsBurning>{0} is burning</NarutoMod.GUI.CasterIsBurning>
 	<NarutoMod.GUI.CasterIsDowned>{0} is downed</NarutoMod.GUI.CasterIsDowned>
-	<NarutoMod.GUI.PowerIsLow>Powers is low. Need as min {0}</NarutoMod.GUI.PowerIsLow>
-	<NarutoMod.GUI.Power>Power</NarutoMod.GUI.Power>
-	<NarutoMod.GUI.PowerGain>Power gain {0} per day</NarutoMod.GUI.PowerGain>
+	<NarutoMod.GUI.PowerIsLow>Chakra is low. Need as min {0}</NarutoMod.GUI.PowerIsLow>
+	<NarutoMod.GUI.Power>Chakra</NarutoMod.GUI.Power>
+	<NarutoMod.GUI.PowerGain>Chakra gain {0} per day</NarutoMod.GUI.PowerGain>
 	
 	<NarutoMod.GUI.MapsList>Allowed maps</NarutoMod.GUI.MapsList>
 	<NarutoMod.GUI.TileId>tile id</NarutoMod.GUI.TileId>
 	<NarutoMod.GUI.NullMapsList>There are no maps available to teleport.</NarutoMod.GUI.NullMapsList>
-	
-	
-	<NarutoMod.FloatMenuOptions.Sacrifice>Sacrifice self</NarutoMod.FloatMenuOptions.Sacrifice>
 
 </LanguageData>

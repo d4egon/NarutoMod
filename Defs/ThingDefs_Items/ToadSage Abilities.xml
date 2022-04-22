@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- Summon ShadowClone -->
+<!-- Toad Sage Abilities -->
 
 	<HediffDef ParentName="ImplantHediffBase">
-		<defName>Prostheses_HediffDef_NM_Summon_ShadowClone</defName>
+		<defName>Prostheses_HediffDef_NM_Ninshu_Toad</defName>
 		<label>Toad sage</label>
 		<description>TODO!</description>
 		<spawnThingOnRemoved>Prostheses_ThingDef_NM_Ninshu_Toad</spawnThingOnRemoved>
@@ -18,11 +18,11 @@
 			<li Class="NarutoMod.Hediffs.NM_HediffCompProperties_Ability">
 				<verbProps>
 					<li>
-						<verbClass>NarutoMod.Verbs.NM_Verb_SummonThing_ShadowClone</verbClass>
-						<label>Summoning Jutsu: ShadowClone</label>
+						<verbClass>NarutoMod.Verbs.NM_Verb_SummonThing_Toad</verbClass>
+						<label>Summoning Jutsu: Toad</label>
 						<description>TODO!</description>
 						<soundCast>NM_SummoningPoof</soundCast>
-						<commandIcon>GUI/SummonShadowClone</commandIcon>
+						<commandIcon>GUI/SummonToad</commandIcon>
 						<hasStandardCommand>true</hasStandardCommand>
 						<targetable>false</targetable>
 						<onlyManualCast>true</onlyManualCast>
@@ -32,17 +32,36 @@
 							<canTargetBuildings>false</canTargetBuildings>
 							<canTargetLocations>false</canTargetLocations>
 						</targetParams>
-						<powerCost>100</powerCost>
-						<pawnKindToSpawn>NM_SummonPawnKind_ShadowClone</pawnKindToSpawn>
+						<powerCost>-100</powerCost>
+						<pawnKindToSpawn>NM_SummonPawnKind_Toad</pawnKindToSpawn>
+					</li>
+					
+					<li>
+						<verbClass>NarutoMod.Verbs.NM_Verb_Shoot</verbClass>
+						<label>Toad Style: Toad Oil Barrage</label>
+						<description>TODO!</description>
+						<soundCast>ThrowGrenade</soundCast>
+						<muzzleFlashScale>20</muzzleFlashScale>
+						<hasStandardCommand>true</hasStandardCommand>
+						<commandIcon>GUI/ToadOilBarrage</commandIcon>
+						<defaultProjectile>NM_ToadOilBullets</defaultProjectile>
+						<onlyManualCast>true</onlyManualCast>
+						<warmupTime>1</warmupTime>
+						<range>25</range>
+						<targetParams>
+							<canTargetLocations>true</canTargetLocations>
+							<canTargetBuildings>true</canTargetBuildings>
+						</targetParams>
+						<powerCost>-20</powerCost>
 					</li>
 				</verbProps>
 			</li>
 		</comps>
 	</HediffDef>
-
+	
 	<ThingDef ParentName="Prostheses_ThingDef_ProsthesisCyberneticBase">
-		<defName>Prostheses_ThingDef_NM_Summon_ShadowClone</defName>
-		<label>summon ShadowClone</label>
+		<defName>Prostheses_ThingDef_NM_Ninshu_Toad</defName>
+		<label>toad sage</label>
 		<description>TODO!</description>
 		<graphicData>
 			<texPath>Things/Items/Implant_DivineCell</texPath>
@@ -57,15 +76,15 @@
 	</ThingDef>
 
 	<RecipeDef ParentName="SurgeryInstallImplantBase">
-		<defName>Prostheses_RecipeInstall_NM_Summon_ShadowClone</defName>
-		<label>summon ShadowClone</label>
-		<description>summonShadowClone</description>
-		<jobString>Learning: Summon ShadowClone</jobString>
+		<defName>Prostheses_RecipeInstall_NM_Ninshu_Toad</defName>
+		<label>Toad sage</label>
+		<description>Toad sage</description>
+		<jobString>Converting to Toad sage</jobString>
 		<ingredients>
 			<li>
 				<filter>
 					<thingDefs>
-						<li>Prostheses_ThingDef_NM_Summon_ShadowClone</li>
+						<li>Prostheses_ThingDef_NM_Ninshu_Toad</li>
 					</thingDefs> 
 				</filter>
 				<count>1</count>
@@ -73,11 +92,10 @@
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
-				<li>Prostheses_ThingDef_NM_Summon_ShadowClone</li>
+				<li>Prostheses_ThingDef_NM_Ninshu_Toad</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-		<addsHediff>Prostheses_HediffDef_NM_Summon_ShadowClone</addsHediff>
+		<addsHediff>Prostheses_HediffDef_NM_Ninshu_Toad</addsHediff>
 	</RecipeDef>
-
 
 </Defs>

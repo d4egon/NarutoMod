@@ -113,7 +113,7 @@ namespace NarutoMod.Things
             {
                 verbTargetCommand.Disable(null);
             }
-            else if (NM_BlackFireUtility.IsBurning(verb.CasterPawn))
+            else if (RimWorld.FireUtility.IsBurning(verb.CasterPawn))
                 verbTargetCommand.Disable(TranslatorFormattedStringExtensions.Translate("NarutoMod.GUI.CasterIsBurning", verb.CasterPawn.LabelShort));
             else if (verb.CasterPawn.Downed)
                 verbTargetCommand.Disable(TranslatorFormattedStringExtensions.Translate("NarutoMod.GUI.CasterIsDowned", verb.CasterPawn.LabelShort));
@@ -143,5 +143,39 @@ namespace NarutoMod.Things
             base.PostExposeData();
             Scribe_Values.Look(ref power, "power", 0.0f, false);
         }
+
+        //Cooldown code below
+        //
+        // private int cooldownTicks;
+        //
+        //private int cooldownTicksDuration;
+        //
+        //public NM_Verb_AbilityHediff def;
+        //
+        //public int CooldownTicksRemaining => this.cooldownTicks;
+        //
+        //public int CooldownTicksTotal => this.cooldownTicksDuration;
+        //
+        // public bool HasCooldown => this.def.cooldownTicksRange != default(IntRange) || (this.def.groupDef != null && this.def.groupDef.cooldownTicks > 0);
+        //
+        // public virtual bool CanCast => this.cooldownTicks <= 0;
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
     }
 }

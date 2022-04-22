@@ -15,4 +15,34 @@
   </FleckDef>
 
 
+<FleckDef ParentName="FleckBase_Thrown" Name="NM_PsycastSkipInner_Water">
+	<defName>NM_PsycastSkipInner_Water</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.4</solidTime>
+    <graphicData>
+      <graphicClass>Graphic_FleckPulse</graphicClass>
+      <shaderType>MotePsychicSkipInner</shaderType>
+      <texPath>Things/Mote/NM_SkipInnerDimension_Water</texPath>
+      <shaderParameters>
+        <_innerRingSize>0.65</_innerRingSize>
+      </shaderParameters>
+      <drawSize>3.4</drawSize>
+    </graphicData>
+  </FleckDef>
+  
+  <FleckDef ParentName="FleckBase_Thrown" Name="NM_PsycastSkipInner_Oil">
+	<defName>NM_PsycastSkipInner_Oil</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.5</solidTime>
+    <graphicData>
+      <graphicClass>Graphic_FleckSplash</graphicClass>
+      <shaderType>MoteWater</shaderType>
+      <texPath>Things/Mote/NM_SkipInnerDimension_Oil</texPath>
+      <shaderParameters>
+        <_color>153,153,0</_color>
+      </shaderParameters>
+      <drawSize>2</drawSize>
+    </graphicData>
+  </FleckDef>
+
 </Defs>

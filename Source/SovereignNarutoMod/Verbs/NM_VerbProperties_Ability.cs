@@ -19,5 +19,29 @@ namespace NarutoMod.Verbs
         public List<IntVec2> pattern;
         public bool ignoreRange;
         public PawnKindDef pawnKindToSpawn;
+        public IntRange cooldownTicksRange;
+        public int cooldownTicks;
+        public bool sendLetterOnCooldownComplete;
+        
+
+
+        [Unsaved(false)]
+        protected TaggedString cachedLabelCap = null;
+
+        public virtual TaggedString LabelCap
+        {
+            get
+            {
+                if (this.label.NullOrEmpty())
+                {
+                    return null;
+                }
+                if (this.cachedLabelCap.NullOrEmpty())
+                {
+                    this.cachedLabelCap = this.label.CapitalizeFirst();
+                }
+                return this.cachedLabelCap;
+            }
+        }
     }
 }

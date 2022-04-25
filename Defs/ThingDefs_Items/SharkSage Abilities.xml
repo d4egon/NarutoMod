@@ -32,8 +32,9 @@
 							<canTargetBuildings>false</canTargetBuildings>
 							<canTargetLocations>false</canTargetLocations>
 						</targetParams>
-						<powerCost>-100</powerCost>
+						<powerCost>100</powerCost>
 						<pawnKindToSpawn>NM_SummonPawnKind_Shark</pawnKindToSpawn>
+						<cooldownTicks>2500</cooldownTicks>
 					</li>
 					<li>
 						<verbClass>NarutoMod.Verbs.NM_Verb_Shoot</verbClass>
@@ -52,7 +53,8 @@
 							<canTargetLocations>true</canTargetLocations>
 							<canTargetBuildings>true</canTargetBuildings>
 						</targetParams>
-						<powerCost>-20</powerCost>
+						<powerCost>20</powerCost>
+						<cooldownTicks>500</cooldownTicks>
 					</li>
 				</verbProps>
 			</li>

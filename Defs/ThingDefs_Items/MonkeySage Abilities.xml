@@ -56,7 +56,7 @@
 							<canTargetLocations>true</canTargetLocations>
 						</targetParams>
 						<soundCast>NM_WoodRelease</soundCast>
-						<powerCost>-30</powerCost>
+						<powerCost>30</powerCost>
 						<pattern>
 																			<li>(5, -1)</li><li>(5, -2)</li><li>(5, 0)</li><li>(5, 1)</li><li>(5, 2)</li>
 															<li>(4, -1)</li><li>(4, -2)</li><li>(4, -3)</li><li>(4, 0)</li><li>(4, 1)</li><li>(4, 2)</li><li>(4, 3)</li>
@@ -88,7 +88,7 @@
 							<canTargetBuildings>false</canTargetBuildings>
 							<canTargetLocations>false</canTargetLocations>
 						</targetParams>
-						<powerCost>-20</powerCost>
+						<powerCost>20</powerCost>
 						<pawnKindToSpawn>NM_SummonPawnKind_WoodClone</pawnKindToSpawn>
 					</li>
 					
@@ -107,7 +107,7 @@
 							<canTargetBuildings>false</canTargetBuildings>
 							<canTargetLocations>false</canTargetLocations>
 						</targetParams>
-						<powerCost>-100</powerCost>
+						<powerCost>100</powerCost>
 						<pawnKindToSpawn>NM_SummonPawnKind_Monkey</pawnKindToSpawn>
 					</li>
 					

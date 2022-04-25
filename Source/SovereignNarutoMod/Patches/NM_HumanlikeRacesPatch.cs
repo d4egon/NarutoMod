@@ -18,7 +18,7 @@ namespace NarutoMod.Patches
             {
                 if (thingDef.comps.Find(c => c is NM_CompProperties_RaceComp) == null)
                 {
-                    thingDef.comps.Add(new NM_CompProperties_RaceComp(300f, 0.025f));
+                    thingDef.comps.Add(new NM_CompProperties_RaceComp(300f, 0.125f));
                     stringBuilder.Append(thingDef.defName + "; ");
                 }
             }

@@ -12,6 +12,8 @@ namespace NarutoMod.Things
     public class NM_Comp_RaceComp : ThingComp
     {
         private float power;
+
+        // Cooldown Code
         public List<NM_Verb_AbilityHediff> verbs;
 
         public Pawn ParentPawn => parent as Pawn;
@@ -118,7 +120,7 @@ namespace NarutoMod.Things
             else if (verb.CasterPawn.Downed)
                 verbTargetCommand.Disable(TranslatorFormattedStringExtensions.Translate("NarutoMod.GUI.CasterIsDowned", verb.CasterPawn.LabelShort));
             else if (!verb.IsReady())
-                verbTargetCommand.Disable(TranslatorFormattedStringExtensions.Translate("NarutoMod.GUI.PowerIsLow", verb.Props.powerCost));
+                verbTargetCommand.Disable(TranslatorFormattedStringExtensions.Translate("NarutoMod.GUI.PowerIsLow", verb.Props.powerCost)); 
             return verbTargetCommand;
         }
 
@@ -134,7 +136,10 @@ namespace NarutoMod.Things
             PowerGainTick();
         }
 
-        private void PowerGainTick() => power = Mathf.Clamp(power + PowerGain, 0.0f, MaxPower);
+        private void PowerGainTick()
+        {
+            power = Mathf.Clamp(power + PowerGain, 0.0f, MaxPower);
+        }
 
         public void Notify_PowerGain(float gain) => power = Mathf.Clamp(power + gain, 0.0f, MaxPower);
 
@@ -144,38 +149,12 @@ namespace NarutoMod.Things
             Scribe_Values.Look(ref power, "power", 0.0f, false);
         }
 
-        //Cooldown code below
-        //
-        // private int cooldownTicks;
-        //
-        //private int cooldownTicksDuration;
-        //
-        //public NM_Verb_AbilityHediff def;
-        //
-        //public int CooldownTicksRemaining => this.cooldownTicks;
-        //
-        //public int CooldownTicksTotal => this.cooldownTicksDuration;
-        //
-        // public bool HasCooldown => this.def.cooldownTicksRange != default(IntRange) || (this.def.groupDef != null && this.def.groupDef.cooldownTicks > 0);
-        //
-        // public virtual bool CanCast => this.cooldownTicks <= 0;
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
+        //Cooldown code
+        public virtual bool GizmoDisabled(out string reason)
+        {
+            reason = null;
+            return false;
+        }
+       
     }
 }

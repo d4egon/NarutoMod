@@ -266,7 +266,6 @@
    <defName>NM_Ninshu</defName>
     <label>Ninshu</label>
     <description>Ninshu</description>
-	
 <alienRace>	
 <generalSettings> 
 
@@ -302,16 +301,14 @@
 				<head>Things/Races/Ninshu/Normal/Head/</head>
 			</li>
 	</graphicPaths>
-	
-	
-		
 </alienRace>
 
 
 <statBases>
-
 </statBases>
 
+<race>
+</race>
 	
 </AlienRace.ThingDef_AlienRace>	
 

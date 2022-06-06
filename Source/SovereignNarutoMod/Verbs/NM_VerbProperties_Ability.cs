@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Verse;
 using RimWorld;
+using VFECore;
 
 namespace NarutoMod.Verbs
 {
@@ -12,6 +13,7 @@ namespace NarutoMod.Verbs
         public HediffDef hediffDef;
         public FleckDef fleckDef;
         public ThingDef moteDef;
+        public ExpandableProjectile projectile;
         public float damageAmount;
         public float severity;
         public FloatRange conditionDaysRange;

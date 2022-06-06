@@ -6,6 +6,13 @@ namespace NarutoMod
     [DefOf]
     public static class NM_HediffDefOf
     {
+        public static HediffDef HediffDef_Ninshu;
+        public static HediffDef Prostheses_HediffDef_NM_Ninshu_Monkey;
+        public static HediffDef Prostheses_HediffDef_NM_Ninshu_Toad;
+        public static HediffDef Prostheses_HediffDef_NM_Ninshu_Snake;
+        public static HediffDef Prostheses_HediffDef_NM_Ninshu_Shark;
+
+
         public static HediffDef HediffDef_EagleEye;
 
         public static HediffDef HediffDef_Regeneration;

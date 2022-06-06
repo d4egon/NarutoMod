@@ -72,19 +72,18 @@
 
         <comps>
 			<li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>-1</basePowerConsumption>
-            </li>
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
 			
 			<li Class="CompProperties_Flickable"/>
             
 			<li Class="CompProperties_BiosculpterPod">
-                <enterSound>BiosculpterPod_Enter</enterSound>
-                <exitSound>BiosculpterPod_Exit</exitSound>
-                <operatingEffecter>BiosculpterPod_Operating</operatingEffecter>
+                <operatingEffecter>DisabledByEMP</operatingEffecter>
                 <readyEffecter>BiosculpterPod_Ready</readyEffecter>
-                <selectCycleColor>(0.321, 1, 0.349)</selectCycleColor>
-                <biotunedCycleSpeedFactor>1.25</biotunedCycleSpeedFactor>
+                <selectCycleColor>(0.6, 0.6, 1, 0.3)</selectCycleColor>
+                <biotunedCycleSpeedFactor>0.5</biotunedCycleSpeedFactor>
             </li>
             
 			<li Class="NarutoMod.PawnKindBiosculptingCycle_Properties">
@@ -94,7 +93,9 @@
                 <durationDays>0.01</durationDays>
                 <iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath>
                 <pawnKind>NM_Ninshu_Snake</pawnKind>
-				<hediffDef>Prostheses_HediffDef_NM_Ninshu_Snake</hediffDef>
+				<hediffname>Prostheses_HediffDef_NM_Ninshu_Snake</hediffname>
+				<hediffseverity>1</hediffseverity>
+				<bodyPart>Torso</bodyPart>
             </li>
 			
 			<li Class="NarutoMod.PawnKindBiosculptingCycle_Properties">
@@ -104,7 +105,9 @@
                 <durationDays>0.01</durationDays>
                 <iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath>
                 <pawnKind>NM_Ninshu_Toad</pawnKind>
-				<hediffDef>Prostheses_HediffDef_NM_Ninshu_Toad</hediffDef>
+				<hediffname>Prostheses_HediffDef_NM_Ninshu_Toad</hediffname>
+				<hediffseverity>1</hediffseverity>
+				<bodyPart>Torso</bodyPart>
             </li>
 			
 			<li Class="NarutoMod.PawnKindBiosculptingCycle_Properties">
@@ -114,7 +117,9 @@
                 <durationDays>0.01</durationDays>
                 <iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath>
                 <pawnKind>NM_Ninshu_Monkey</pawnKind>
-				<hediffDef>Prostheses_HediffDef_NM_Ninshu_Monkey</hediffDef>
+				<hediffname>Prostheses_HediffDef_NM_Ninshu_Monkey</hediffname>
+				<hediffseverity>1</hediffseverity>
+				<bodyPart>Torso</bodyPart>				
             </li>
 			
 			<li Class="NarutoMod.PawnKindBiosculptingCycle_Properties">
@@ -124,7 +129,9 @@
                 <durationDays>0.01</durationDays>
                 <iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath>
                 <pawnKind>NM_Ninshu_Shark</pawnKind>
-				<hediffDef>Prostheses_HediffDef_NM_Ninshu_Shark</hediffDef>
+				<hediffname>Prostheses_HediffDef_NM_Ninshu_Shark</hediffname>
+				<hediffseverity>1</hediffseverity>
+				<bodyPart>Torso</bodyPart>
             </li>
         </comps>
 		

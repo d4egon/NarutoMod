@@ -122,4 +122,32 @@
     </tools>
   </ThingDef>
   
+  
+  <VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>NM_SharinganAnimation</defName>
+		<label>sharingan animation</label>
+		<thingClass>NarutoMod.Effects.Animated_ExpandableProjectile</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/NM_SharinganRotating</texPath>
+			<texPathFadeOut>Things/Projectile/NM_SharinganRotatingFadeOut</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<speed>1</speed>
+			<damageAmountBase>0</damageAmountBase>
+		</projectile>
+
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>75</lifeTimeDuration>
+		<widthScaleFactor>2</widthScaleFactor>
+		<heightScaleFactor>2</heightScaleFactor>
+		<startingPositionOffset>(0, 0, 0)</startingPositionOffset>
+		<totalSizeScale>4</totalSizeScale>
+		<tickFrameRate>4</tickFrameRate>
+		<finalTickFrameRate>4</finalTickFrameRate>
+		<tickDamageRate>4</tickDamageRate>
+		<dealsDamageOnce>false</dealsDamageOnce>
+		<minDistanceToAffect>10</minDistanceToAffect>
+  </VFECore.ExpandableProjectileDef>
 </Defs>

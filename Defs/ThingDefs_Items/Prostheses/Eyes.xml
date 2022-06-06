@@ -155,7 +155,7 @@
 						<powerCost>30</powerCost>
 					</li>
 					<li>
-						<verbClass>NarutoMod.Verbs.NM_Verb_AddHediffSelf</verbClass>
+						<verbClass>NarutoMod.Verbs.NM_Verb_Shoot</verbClass>
 						<label>Sharingan</label>
 						<description>This puts the user into Sharingan mode,where they can prevent just about any attack for a certain period of time.</description>
 						<commandIcon>GUI/Sharingan</commandIcon>
@@ -168,11 +168,12 @@
 						<targetParams>
 							<canTargetBuildings>false</canTargetBuildings>
 							<canTargetLocations>false</canTargetLocations>
+							<canTargetSelf>true</canTargetSelf>
 						</targetParams>
 						<soundCast>SoundDef_RedProshesisSound</soundCast>
-						<powerCost>30</powerCost>
-						<severity>1</severity>
-						<hediffDef>HediffDef_Invulnerable</hediffDef>
+						<powerCost>20</powerCost>
+						<cooldownTicks>500</cooldownTicks>
+						<defaultProjectile>NM_SharinganAnimation</defaultProjectile>
 					</li>
 				</verbProps>
 			</li>

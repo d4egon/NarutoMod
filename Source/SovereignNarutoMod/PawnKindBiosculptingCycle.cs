@@ -1,13 +1,16 @@
 ﻿using RimWorld;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using Verse;
 
 namespace NarutoMod
 {
     public class PawnKindBiosculptingCycle : CompBiosculpterPod_Cycle
     {
-    
-        
+
+
         public new PawnKindBiosculptingCycle_Properties Props
         {
             get
@@ -15,8 +18,6 @@ namespace NarutoMod
                 return (PawnKindBiosculptingCycle_Properties)this.props;
             }
         }
-
-
 
         public override void CycleCompleted(Pawn occupant)
         {
@@ -62,16 +63,23 @@ namespace NarutoMod
             {
                 newPawn.health = occupant.health;
             }
+            
+            if (occupant.health.hediffSet.HasHediff(NM_HediffDefOf.HediffDef_Ninshu) != true && occupant.health.hediffSet.HasHediff(NM_HediffDefOf.Prostheses_HediffDef_NM_Ninshu_Monkey) != true && occupant.health.hediffSet.HasHediff(NM_HediffDefOf.Prostheses_HediffDef_NM_Ninshu_Shark) != true && occupant.health.hediffSet.HasHediff(NM_HediffDefOf.Prostheses_HediffDef_NM_Ninshu_Snake) != true && occupant.health.hediffSet.HasHediff(NM_HediffDefOf.Prostheses_HediffDef_NM_Ninshu_Toad) != true)
+            {
+
+                BodyPartRecord part = newPawn.RaceProps.body.GetPartsWithDef(this.Props.bodyPart).FirstOrDefault<BodyPartRecord>();
+                newPawn.health.AddHediff(HediffDef.Named(this.Props.hediffname), part, null, null);
+                newPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.hediffname), false).Severity += this.Props.hediffseverity;
+            }
 
             if (newPawn.style != null)
             {
                 newPawn.style = occupant.style;
             }
-
-            occupant.Destroy();
+    occupant.Destroy();
             Find.ColonistBar.MarkColonistsDirty();
 
             parent.TryGetComp<CompBiosculpterPod>()?.SetBiotuned(null);
-        }
+}
     }
 }

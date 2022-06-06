@@ -1,4 +1,6 @@
 ﻿using Verse;
+using VFECore;
+using NarutoMod.Verbs;
 
 namespace NarutoMod.Verbs
 {
@@ -16,4 +18,5 @@ namespace NarutoMod.Verbs
             CasterPawn.stances.stunner.StunFor(60, CasterPawn, false, false);
         }
     }
+
 }

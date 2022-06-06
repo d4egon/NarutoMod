@@ -72,19 +72,16 @@
 
         <comps>
 			<li Class="CompProperties_Power">
-                <compClass>CompPowerTrader</compClass>
-                <basePowerConsumption>-1</basePowerConsumption>
-            </li>
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-1</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
 			
-			<li Class="CompProperties_Flickable"/>
-            
 			<li Class="CompProperties_BiosculpterPod">
-                <enterSound>BiosculpterPod_Enter</enterSound>
-                <exitSound>BiosculpterPod_Exit</exitSound>
-                <operatingEffecter>BiosculpterPod_Operating</operatingEffecter>
+                <operatingEffecter>DisabledByEMP</operatingEffecter>
                 <readyEffecter>BiosculpterPod_Ready</readyEffecter>
-                <selectCycleColor>(0.321, 1, 0.349)</selectCycleColor>
-                <biotunedCycleSpeedFactor>1.25</biotunedCycleSpeedFactor>
+                <selectCycleColor>(1, 1, 1, 0.3)</selectCycleColor>
+                <biotunedCycleSpeedFactor>0.5</biotunedCycleSpeedFactor>
             </li>
 
             <li Class="NarutoMod.PawnKindBiosculptingCycle_Properties">
@@ -94,6 +91,9 @@
                 <durationDays>0.01</durationDays>
                 <iconPath>UI/Gizmos/BiosculpterCycleHealing</iconPath>
                 <pawnKind>NM_Ninshu</pawnKind>
+				<hediffname>HediffDef_Ninshu</hediffname>
+				<hediffseverity>1</hediffseverity>
+				<bodyPart>Torso</bodyPart>
             </li>
             
         </comps>

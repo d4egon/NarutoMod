@@ -11,7 +11,6 @@ namespace NarutoMod.DefOfs
         public static PawnKindDef NM_SummonPawnKind_SnakeSmall;
         public static PawnKindDef NM_SummonPawnKind_SnakePurple;
         public static PawnKindDef NM_SummonPawnKind_Toad;
-        public static PawnKindDef NM_SummonPawnKind_Monkey;
         public static PawnKindDef NM_SummonPawnKind_Shark;
         public static PawnKindDef NM_SummonPawnKind_ShadowClone;
         public static PawnKindDef NM_SummonPawnKind_WoodClone;

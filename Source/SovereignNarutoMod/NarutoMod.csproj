@@ -46,6 +46,7 @@
     <Reference Include="ExplosiveTrailsEffect">
       <HintPath>..\..\..\VanillaExpandedFramework\1.3\Assemblies\ExplosiveTrailsEffect.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
@@ -60,8 +61,14 @@
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System.Core" />
+    <Reference Include="VFECore">
+      <HintPath>..\..\..\VanillaExpandedFramework\1.3\Assemblies\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Effects\Animated_ExpandableProjectile.cs" />
+    <Compile Include="Effects\NM_Test_Sharingan.cs" />
     <Compile Include="Effects\NM_Projectile_OilTrail.cs" />
     <Compile Include="Effects\NM_Projectile_WaterTrail.cs" />
     <Compile Include="DefOfs\NM_DamageDefOf.cs" />
@@ -76,7 +83,6 @@
     <Compile Include="Verbs\NM_Verb_SummonThing_ShadowClone.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_Shark.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_SnakeSmall.cs" />
-    <Compile Include="Verbs\NM_Verb_SummonThing_Monkey.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_Toad.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_Snake.cs" />
     <Compile Include="Verbs\NM_Verb_SummonThing_SnakePurple.cs" />

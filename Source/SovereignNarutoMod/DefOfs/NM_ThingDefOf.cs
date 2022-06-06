@@ -22,7 +22,6 @@ namespace NarutoMod
         public static ThingDef NM_SummonThing_SnakePurple;
         public static ThingDef NM_SummonThing_Shark;
         public static ThingDef NM_SummonThing_Toad;
-        public static ThingDef NM_SummonThing_Monkey;
         public static ThingDef NM_SummonThing_ShadowClone;
         public static ThingDef NM_SummonThing_WoodClone;
 

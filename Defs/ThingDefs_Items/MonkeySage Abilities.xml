@@ -91,26 +91,6 @@
 						<powerCost>20</powerCost>
 						<pawnKindToSpawn>NM_SummonPawnKind_WoodClone</pawnKindToSpawn>
 					</li>
-					
-					<li>
-						<verbClass>NarutoMod.Verbs.NM_Verb_SummonThing_Monkey</verbClass>
-						<label>Summoning Jutsu: Monkey</label>
-						<description>TODO!</description>
-						<soundCast>NM_SummoningPoof</soundCast>
-						<commandIcon>GUI/SummonMonkey</commandIcon>
-						<hasStandardCommand>true</hasStandardCommand>
-						<targetable>false</targetable>
-						<onlyManualCast>true</onlyManualCast>
-						<range>0.0</range>
-						<warmupTime>0</warmupTime>
-						<targetParams>
-							<canTargetBuildings>false</canTargetBuildings>
-							<canTargetLocations>false</canTargetLocations>
-						</targetParams>
-						<powerCost>100</powerCost>
-						<pawnKindToSpawn>NM_SummonPawnKind_Monkey</pawnKindToSpawn>
-					</li>
-					
 				</verbProps>
 			</li>
 		</comps>
